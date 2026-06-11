@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HTML Mastery with Nilansha – Learn HTML from scratch. From absolute beginner to building structured websites with real projects." />
+  <meta name="author" content="Nilansha Pandey" />
+  <meta name="robots" content="index, follow" />
+  <title>HTML Mastery with Nilansha | From Beginner to Building Websites</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://developernilansha.github.io/html-mastery/" />
+  <meta property="og:title" content="HTML Mastery with Nilansha | From Beginner to Building Websites" />
+  <meta property="og:description" content="Learn HTML from scratch with interactive lessons, structured roadmaps, and real projects. Built for beginners to master the foundation of web development." />
+  <meta property="og:image" content="https://developernilansha.github.io/html-mastery/assets/img/profile.png" />
+  <meta property="og:site_name" content="HTML Mastery" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://developernilansha.github.io/html-mastery/" />
+  <meta property="twitter:title" content="HTML Mastery with Nilansha | From Beginner to Building Websites" />
+  <meta property="twitter:description" content="Learn HTML from scratch with interactive lessons, structured roadmaps, and real projects. Built for beginners to master the foundation of web development." />
+  <meta property="twitter:image" content="https://developernilansha.github.io/html-mastery/assets/img/profile.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://developernilansha.github.io/html-mastery/" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="HTML" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">HTML Mastery <span>with Nilansha</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="#instructor">Instructor</a></li>
+        <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+        <li class="nav-item"><a class="nav-link" href="#method">How It Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#outcomes">Outcomes</a></li>
+        <li class="nav-item ms-2">
+          <a class="nav-link btn-nav-cta" href="#chapter1-cta">Start Learning →</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="hero-eyebrow" data-aos="fade-up">
+          <i class="fab fa-html5" style="color:var(--orange)"></i>
+          &lt;chapter-0-introduction&gt;
+        </div>
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="80">
+          <span class="accent">HTML</span> Mastery<br />
+          <span class="name-highlight">with Nilansha</span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="160">
+          From Absolute Beginner to Building Structured Websites with HTML. Learn the backbone of every website — one tag at a time.
+        </p>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="220">
+          <div class="hero-stat">
+            <span class="num" id="count-chapters">0</span>
+            <span class="lbl">Chapters</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num" id="count-projects">0</span>
+            <span class="lbl">Projects</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num" id="count-tags">0+</span>
+            <span class="lbl">HTML Tags</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num" style="font-size:1.8rem">Free</span>
+            <span class="lbl">Forever</span>
+          </div>
+        </div>
+        <div class="hero-cta" data-aos="fade-up" data-aos-delay="280">
+          <button class="btn-primary-cta" onclick="document.getElementById('chapter1-cta').scrollIntoView({behavior:'smooth'})">
+            <i class="fas fa-play"></i> Start Learning
+          </button>
+          <button class="btn-ghost-cta" onclick="document.getElementById('roadmap').scrollIntoView({behavior:'smooth'})">
+            <i class="fas fa-map"></i> View Roadmap
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+        <div class="position-relative">
+          <div class="hero-code-card">
+            <div class="code-card-header">
+              <div class="code-dot red"></div>
+              <div class="code-dot yellow"></div>
+              <div class="code-dot green"></div>
+              <span class="code-file">index.html — HTML Mastery</span>
+            </div>
+            <div class="code-body" id="code-display">
+              <div><span class="c-comment c-ln">1</span><span class="c-comment">&lt;!-- HTML Mastery with Nilansha --&gt;</span></div>
+              <div><span class="c-ln">2</span><span class="c-comment">&lt;!-- From Zero to Real Websites --&gt;</span></div>
+              <div><span class="c-ln">3</span></div>
+              <div><span class="c-ln">4</span><span class="c-tag">&lt;!DOCTYPE</span> <span class="c-attr">html</span><span class="c-tag">&gt;</span></div>
+              <div><span class="c-ln">5</span><span class="c-tag">&lt;html</span> <span class="c-attr">lang</span>=<span class="c-str">"en"</span><span class="c-tag">&gt;</span></div>
+              <div><span class="c-ln">6</span>&nbsp;&nbsp;<span class="c-tag">&lt;head&gt;</span></div>
+              <div><span class="c-ln">7</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tag">&lt;title&gt;</span><span class="c-text">My First Webpage</span><span class="c-tag">&lt;/title&gt;</span></div>
+              <div><span class="c-ln">8</span>&nbsp;&nbsp;<span class="c-tag">&lt;/head&gt;</span></div>
+              <div><span class="c-ln">9</span>&nbsp;&nbsp;<span class="c-tag">&lt;body&gt;</span></div>
+              <div><span class="c-ln">10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tag">&lt;h1&gt;</span><span class="c-text">Welcome to HTML!</span><span class="c-tag">&lt;/h1&gt;</span></div>
+              <div><span class="c-ln">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tag">&lt;p&gt;</span><span class="c-text">Let's build the web <i class="fas fa-rocket" style="color:var(--orange)"></i></span><span class="c-tag">&lt;/p&gt;</span></div>
+              <div><span class="c-ln">12</span>&nbsp;&nbsp;<span class="c-tag">&lt;/body&gt;</span></div>
+              <div><span class="c-ln">13</span><span class="c-tag">&lt;/html&gt;</span><span class="typing-cursor" style="color:var(--orange)">|</span></div>
+            </div>
+          </div>
+          <div class="float-badge b1">
+            <div class="badge-dot"></div>
+            <span style="color:var(--text-soft)"><span style="color:var(--green); font-weight:700">HTML5</span> — The Web's Backbone</span>
+          </div>
+          <div class="float-badge b2">
+            <i class="fas fa-rocket" style="color:var(--orange)"></i>
+            <span style="color:var(--text-soft)">8 Chapters + Mega Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY HTML ==================== -->
+<section id="why">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-eyebrow">&lt;why-html&gt;</div>
+      <h2 class="section-title">The Foundation of Every Website</h2>
+      <p class="section-desc mx-auto">Before CSS, before JavaScript, before any framework — there's HTML. It's not just a skill; it's the language of the web itself.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="glass-card why-card h-100">
+          <div class="why-icon"><i class="fab fa-html5"></i></div>
+          <h5>Foundation of the Web</h5>
+          <p>Every website, app, or email you've ever seen runs on HTML. It's the bedrock that everything else is built on. You cannot skip this step.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+        <div class="glass-card why-card h-100">
+          <div class="why-icon"><i class="fas fa-code"></i></div>
+          <h5>Structure for Everything</h5>
+          <p>HTML gives meaning to content — headings, paragraphs, lists, forms. Without structure, a browser has nothing to render. You write structure, the browser builds the page.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+        <div class="glass-card why-card h-100">
+          <div class="why-icon"><i class="fas fa-terminal"></i></div>
+          <h5>Gateway to CSS & JS</h5>
+          <p>Can't learn CSS without HTML. Can't use JavaScript without HTML. Master this first, and every other web technology opens up naturally in sequence.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="240">
+        <div class="glass-card why-card h-100">
+          <div class="why-icon"><i class="fas fa-laptop-code"></i></div>
+          <h5>Required Before Frameworks</h5>
+          <p>React, Vue, Angular — they all output HTML. You can't understand modern frontend development without first knowing what a div, section, or article tag actually does.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="glass-card why-card h-100">
+          <div class="why-icon"><i class="fas fa-eye"></i></div>
+          <h5>Accessibility & SEO Built-In</h5>
+          <p>Semantic HTML directly affects how screen readers work and how Google indexes your site. Writing good HTML = making the web better for everyone.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="360">
+        <div class="glass-card why-card h-100">
+          <div class="why-icon"><i class="fas fa-file-code"></i></div>
+          <h5>Essential Developer Skill</h5>
+          <p>Every single job posting for web developer roles lists HTML. It's not optional. It's the table stakes skill before everything else gets added on top.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== INSTRUCTOR ==================== -->
+<section id="instructor" class="instructor-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-eyebrow">&lt;meet-your-instructor&gt;</div>
+      <h2 class="section-title">Built for Beginners, By a Learner Who Gets It</h2>
+    </div>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="glass-card instructor-card-main">
+         <center><img src="assets/img/profile.png" alt="Nilansha Pandey" class="instructor-avatar" /></center> 
+          <div class="instructor-name">Nilansha Pandey</div>
+          <div class="instructor-role">
+            <span class="pulse-dot"></span>
+            CS Student &nbsp;·&nbsp; Frontend Dev &nbsp;·&nbsp; Future Engineer
+          </div>
+          <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.75; margin-bottom:16px;">
+            Nilansha Pandey is a Computer Science student passionate about web development and modern technologies. She believes every great website starts with a strong understanding of HTML — and she's built this course to prove that learning it can actually be joyful.
+          </p>
+          <div class="instructor-quote">
+            "Don't just memorize HTML tags. Use them to build real webpages."
+          </div>
+          <div class="mt-3">
+            <div class="mb-2" style="font-size:0.78rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.07em;">Technology Interests</div>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Web Accessibility</span>
+            <span class="skill-tag">Git & GitHub</span>
+          </div>
+          <div class="mt-4 d-flex gap-2">
+            <a href="https://github.com/DeveloperNilansha" class="social-btn" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nilansha-pandey-9586b026b/" class="social-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:nilansha777@gmail.com" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="glass-card p-4 mb-4">
+          <h5 style="font-size:1rem; font-weight:700; margin-bottom:20px; color:var(--orange-light);">
+            <i class="fas fa-bullseye me-2" style="color:var(--orange)"></i>Course Mission
+          </h5>
+          <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.75; margin:0;">
+            To help complete beginners build a strong HTML foundation that prepares them for CSS, JavaScript, and modern web development — using visual explanations, practical exercises, and real-world projects. No fluff. No shortcuts. Just real learning.
+          </p>
+        </div>
+
+        <div class="glass-card p-4 mb-4">
+          <h5 style="font-size:1rem; font-weight:700; margin-bottom:20px; color:var(--orange-light);">
+            <i class="fas fa-road me-2" style="color:var(--orange)"></i>The Teaching Philosophy
+          </h5>
+          <div class="journey-item">
+            <div class="journey-dot"><i class="fas fa-eye"></i></div>
+            <div class="journey-content">
+              <h6>Visual First</h6>
+              <p>Every concept is shown before it's explained. You see HTML render in a browser before you memorize syntax.</p>
+            </div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-dot"><i class="fas fa-keyboard"></i></div>
+            <div class="journey-content">
+              <h6>Hands-On Always</h6>
+              <p>Every chapter ends with exercises you actually type. Reading HTML is not enough — building with HTML is where learning happens.</p>
+            </div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-dot"><i class="fas fa-project-diagram"></i></div>
+            <div class="journey-content">
+              <h6>Projects Drive Understanding</h6>
+              <p>Four regular projects and two mega projects anchor every concept in something real. Theory without practice disappears within days.</p>
+            </div>
+          </div>
+          <div class="journey-item" style="margin-bottom:0">
+            <div class="journey-dot"><i class="fas fa-redo"></i></div>
+            <div class="journey-content">
+              <h6>Revise to Retain</h6>
+              <p>Every chapter includes quick revision tools and interview questions so knowledge sticks for the long haul.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card p-4">
+          <h5 style="font-size:1rem; font-weight:700; margin-bottom:20px; color:var(--orange-light);">
+            <i class="fas fa-chart-bar me-2" style="color:var(--orange)"></i>Skills Focus
+          </h5>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>HTML Fundamentals</span><span>Core</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>Semantic HTML</span><span>Deep Dive</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>Forms & Tables</span><span>In Depth</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar" style="margin-bottom:0">
+            <div class="skill-bar-label"><span>Accessibility & SEO</span><span>Introduced</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ROADMAP ==================== -->
+<section id="roadmap" class="roadmap-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-eyebrow">&lt;complete-roadmap&gt;</div>
+      <h2 class="section-title">Your Full HTML Learning Journey</h2>
+      <p class="section-desc mx-auto">Eight chapters, four projects, two mega projects. Every step is designed to build on the last. Here's exactly where you're going.</p>
+    </div>
+
+    <!-- Phase Tabs -->
+    <div class="phase-tabs justify-content-center" data-aos="fade-up">
+      <button class="phase-tab active" onclick="filterPhase('all', this)">All Phases</button>
+      <button class="phase-tab" onclick="filterPhase('foundation', this)">Foundation</button>
+      <button class="phase-tab" onclick="filterPhase('projects', this)">Projects</button>
+      <button class="phase-tab" onclick="filterPhase('mega', this)">Mega Projects</button>
+    </div>
+
+    <div class="roadmap-timeline" id="roadmap-content">
+
+      <!-- PHASE 1 -->
+      <div class="phase-label phase-foundation" data-aos="fade-up">
+        <i class="fas fa-seedling"></i> Phase 1 — Foundation Level
+      </div>
+
+      <div class="roadmap-item phase-foundation" data-aos="fade-up">
+        <div class="roadmap-node">01</div>
+        <div class="roadmap-card">
+          <h5>Introduction to Web Development</h5>
+          <p>Your launchpad. Before writing a single tag, understand what HTML actually is, how browsers work, and set up your coding environment.</p>
+          <div>
+            <span class="topic-pill">What is HTML?</span>
+            <span class="topic-pill">Frontend vs Backend</span>
+            <span class="topic-pill">HTML, CSS & JS</span>
+            <span class="topic-pill">How Websites Work</span>
+            <span class="topic-pill">VS Code Setup</span>
+            <span class="topic-pill">First HTML File</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item phase-foundation" data-aos="fade-up" data-aos-delay="50">
+        <div class="roadmap-node">02</div>
+        <div class="roadmap-card">
+          <h5>Basic HTML Structure</h5>
+          <p>The skeleton every webpage is built on. Learn the exact anatomy of an HTML document — the structure that browsers parse to create everything you see.</p>
+          <div>
+            <span class="topic-pill">DOCTYPE</span>
+            <span class="topic-pill">&lt;html&gt; Tag</span>
+            <span class="topic-pill">&lt;head&gt; & &lt;body&gt;</span>
+            <span class="topic-pill">&lt;title&gt;</span>
+            <span class="topic-pill">Meta Tags</span>
+            <span class="topic-pill">Comments</span>
+            <span class="topic-pill">Whitespace Rules</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item phase-foundation" data-aos="fade-up" data-aos-delay="100">
+        <div class="roadmap-node">03</div>
+        <div class="roadmap-card">
+          <h5>Text Formatting & Basic Tags</h5>
+          <p>Make text mean something. Learn every formatting tag and understand why semantic meaning matters beyond just visual style.</p>
+          <div>
+            <span class="topic-pill">h1–h6 Headings</span>
+            <span class="topic-pill">&lt;p&gt; &lt;br&gt; &lt;hr&gt;</span>
+            <span class="topic-pill">Bold & Strong</span>
+            <span class="topic-pill">Italic & Em</span>
+            <span class="topic-pill">&lt;mark&gt; &lt;sub&gt; &lt;sup&gt;</span>
+            <span class="topic-pill">&lt;pre&gt;</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item phase-foundation" data-aos="fade-up" data-aos-delay="150">
+        <div class="roadmap-node">04</div>
+        <div class="roadmap-card">
+          <h5>Links, Images & Media</h5>
+          <p>Connect your pages to the world. Embed images, audio, video, and external content — the chapter that makes webpages feel alive.</p>
+          <div>
+            <span class="topic-pill">Anchor Tag &lt;a&gt;</span>
+            <span class="topic-pill">Relative Links</span>
+            <span class="topic-pill">Absolute Links</span>
+            <span class="topic-pill">&lt;img&gt; Tag</span>
+            <span class="topic-pill">&lt;figure&gt;</span>
+            <span class="topic-pill">Audio & Video</span>
+            <span class="topic-pill">iframe</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item phase-foundation" data-aos="fade-up" data-aos-delay="200">
+        <div class="roadmap-node">05</div>
+        <div class="roadmap-card">
+          <h5>Lists & Tables</h5>
+          <p>Organise everything. From navigation menus to academic results — lists and tables are the workhorses of real HTML projects.</p>
+          <div>
+            <span class="topic-pill">Ordered Lists</span>
+            <span class="topic-pill">Unordered Lists</span>
+            <span class="topic-pill">Nested Lists</span>
+            <span class="topic-pill">Definition Lists</span>
+            <span class="topic-pill">Tables</span>
+            <span class="topic-pill">Rowspan & Colspan</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item phase-foundation" data-aos="fade-up" data-aos-delay="250">
+        <div class="roadmap-node">06</div>
+        <div class="roadmap-card">
+          <h5>Div, Span & Attributes</h5>
+          <p>The control layer. Learn how to target, group, and annotate HTML elements — essential groundwork before CSS and JavaScript touch your pages.</p>
+          <div>
+            <span class="topic-pill">&lt;div&gt; & &lt;span&gt;</span>
+            <span class="topic-pill">id & class</span>
+            <span class="topic-pill">style Attribute</span>
+            <span class="topic-pill">Data Attributes</span>
+            <span class="topic-pill">Global Attributes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item phase-foundation" data-aos="fade-up" data-aos-delay="300">
+        <div class="roadmap-node">07</div>
+        <div class="roadmap-card">
+          <h5>Forms</h5>
+          <p>Where users talk back to websites. Learn to build forms that collect real data — input types, validation, file uploads, and everything in between.</p>
+          <div>
+            <span class="topic-pill">&lt;form&gt; Tag</span>
+            <span class="topic-pill">Labels & Inputs</span>
+            <span class="topic-pill">Textarea & Select</span>
+            <span class="topic-pill">Radio & Checkbox</span>
+            <span class="topic-pill">File Upload</span>
+            <span class="topic-pill">Form Validation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item phase-foundation" data-aos="fade-up" data-aos-delay="350">
+        <div class="roadmap-node">08</div>
+        <div class="roadmap-card">
+          <h5>Semantic HTML</h5>
+          <p>Write HTML that means something. The chapter where good developers separate from great ones — structure that search engines, screen readers, and developers can all understand.</p>
+          <div>
+            <span class="topic-pill">&lt;header&gt; &lt;nav&gt;</span>
+            <span class="topic-pill">&lt;section&gt; &lt;article&gt;</span>
+            <span class="topic-pill">&lt;aside&gt; &lt;main&gt;</span>
+            <span class="topic-pill">&lt;footer&gt;</span>
+            <span class="topic-pill">Accessibility Basics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MILESTONE: Beginner Project -->
+      <div class="phase-label phase-projects" data-aos="fade-up">
+        <i class="fas fa-code-branch"></i> Beginner Project — Apply the Fundamentals
+      </div>
+
+      <div class="roadmap-item phase-projects" data-aos="fade-up">
+        <div class="roadmap-node milestone-node"><i class="fas fa-diagram-project"></i></div>
+        <div class="milestone-card">
+          <h4>Project 1 — Student Profile Page</h4>
+          <p>Your first real HTML document. Build a complete personal profile page using the structural and formatting skills from the first three chapters.</p>
+          <span class="milestone-badge">Personal Information</span>
+          <span class="milestone-badge">Education Details</span>
+          <span class="milestone-badge">Skills List</span>
+          <span class="milestone-badge">Hobbies</span>
+          <span class="milestone-badge">Contact Info</span>
+        </div>
+      </div>
+
+      <!-- PROJECT SECTION -->
+      <div class="phase-label phase-projects" data-aos="fade-up">
+        <i class="fas fa-hammer"></i> Project Section — Build Real Interfaces
+      </div>
+
+      <div class="roadmap-item phase-projects" data-aos="fade-up">
+        <div class="roadmap-node milestone-node"><i class="fas fa-graduation-cap"></i></div>
+        <div class="milestone-card">
+          <h4>Project 2 — College Admission Form</h4>
+          <p>Put your forms knowledge to work. Build a professional, validated admission form with file upload and multiple input types.</p>
+          <span class="milestone-badge">Student Details</span>
+          <span class="milestone-badge">Course Selection</span>
+          <span class="milestone-badge">Address Info</span>
+          <span class="milestone-badge">File Upload</span>
+          <span class="milestone-badge">Form Validation</span>
+        </div>
+      </div>
+
+      <div class="roadmap-item phase-projects" data-aos="fade-up">
+        <div class="roadmap-node milestone-node"><i class="fas fa-chart-line"></i></div>
+        <div class="milestone-card">
+          <h4>Project 3 — Student Result Management Page</h4>
+          <p>Master tables by building a complete result sheet with marks, grades, and percentage calculations.</p>
+          <span class="milestone-badge">Student Info</span>
+          <span class="milestone-badge">Marks Table</span>
+          <span class="milestone-badge">Grade Info</span>
+          <span class="milestone-badge">Remarks Section</span>
+        </div>
+      </div>
+
+      <div class="roadmap-item phase-projects" data-aos="fade-up">
+        <div class="roadmap-node milestone-node"><i class="fas fa-book-open"></i></div>
+        <div class="milestone-card">
+          <h4>Project 4 — Library Management Page</h4>
+          <p>Combine tables, forms, and lists in one complete project — a fully structured library management interface.</p>
+          <span class="milestone-badge">Book Records Table</span>
+          <span class="milestone-badge">Issue Request Form</span>
+          <span class="milestone-badge">Library Rules</span>
+          <span class="milestone-badge">Contact Info</span>
+        </div>
+      </div>
+
+      <!-- MEGA PROJECTS -->
+      <div class="phase-label phase-mega" data-aos="fade-up">
+        <i class="fas fa-crown"></i> Final Phase — Mega Projects
+      </div>
+
+      <div class="roadmap-item phase-mega" data-aos="fade-up">
+        <div class="roadmap-node milestone-node"><i class="fas fa-graduation-cap"></i></div>
+        <div class="milestone-card" style="background: linear-gradient(135deg, rgba(249,115,22,0.12), rgba(251,146,60,0.06)); border-color: rgba(249,115,22,0.35);">
+          <h4>Mega Project 1 — College Management Website</h4>
+          <p>Build a complete, multi-page website for a college. Every major concept from all 8 chapters comes together here in a real-world scenario.</p>
+          <div class="mb-2">
+            <strong style="font-size:0.78rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;">Pages Built:</strong>
+          </div>
+          <span class="milestone-badge">Home Page</span>
+          <span class="milestone-badge">About College</span>
+          <span class="milestone-badge">Courses Offered</span>
+          <span class="milestone-badge">Faculty Details</span>
+          <span class="milestone-badge">Admission Form</span>
+          <span class="milestone-badge">Contact Page</span>
+          <div class="mt-2">
+            <strong style="font-size:0.78rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;">Concepts:</strong>
+            <span class="topic-pill ms-1">Multi-Page Website</span>
+            <span class="topic-pill">Navigation Links</span>
+            <span class="topic-pill">Tables & Forms</span>
+            <span class="topic-pill">Semantic HTML</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="roadmap-item phase-mega" data-aos="fade-up">
+        <div class="roadmap-node milestone-node"><i class="fas fa-graduation-cap"></i></div>
+        <div class="milestone-card" style="background: linear-gradient(135deg, rgba(249,115,22,0.12), rgba(251,146,60,0.06)); border-color: rgba(249,115,22,0.35);">
+          <h4>Mega Project 2 — Student Information Portal</h4>
+          <p>A full student portal with a dashboard, profile, attendance, marksheet, assignments, and feedback form. This is the capstone that proves you're HTML-ready.</p>
+          <div class="mb-2">
+            <strong style="font-size:0.78rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;">Pages Built:</strong>
+          </div>
+          <span class="milestone-badge">Dashboard Page</span>
+          <span class="milestone-badge">Student Profile</span>
+          <span class="milestone-badge">Attendance Record</span>
+          <span class="milestone-badge">Marksheet</span>
+          <span class="milestone-badge">Assignment Page</span>
+          <span class="milestone-badge">Feedback Form</span>
+          <div class="mt-2">
+            <strong style="font-size:0.78rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;">Concepts:</strong>
+            <span class="topic-pill ms-1">Complex Tables</span>
+            <span class="topic-pill">Multi-Page Nav</span>
+            <span class="topic-pill">Semantic Structure</span>
+            <span class="topic-pill">Full Forms</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end roadmap-content -->
+  </div>
+</section>
+
+<!-- ==================== HOW IT WORKS ==================== -->
+<section id="method">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="section-eyebrow">&lt;how-it-works&gt;</div>
+        <h2 class="section-title">A Learning System That Actually Works</h2>
+        <p class="section-desc mb-4">Every chapter follows the same battle-tested cycle. By the time you finish a chapter, you haven't just read about HTML — you've built with it.</p>
+        <div class="orange-divider"></div>
+        <div class="method-step">
+          <div class="method-num">1</div>
+          <div class="method-text">
+            <h6>Learn the Concept</h6>
+            <p>Clear, visual explanations with no fluff. You understand why before you understand how.</p>
+          </div>
+        </div>
+        <div class="method-connector"></div>
+        <div class="method-step">
+          <div class="method-num">2</div>
+          <div class="method-text">
+            <h6>See Working Examples</h6>
+            <p>Real HTML code. Real browser output. Not abstract diagrams — actual tags rendering actual pages.</p>
+          </div>
+        </div>
+        <div class="method-connector"></div>
+        <div class="method-step">
+          <div class="method-num">3</div>
+          <div class="method-text">
+            <h6>Practice Questions</h6>
+            <p>Structured exercises that test comprehension before you touch the keyboard.</p>
+          </div>
+        </div>
+        <div class="method-connector"></div>
+        <div class="method-step">
+          <div class="method-num">4</div>
+          <div class="method-text">
+            <h6>Mini Tasks</h6>
+            <p>Small, focused challenges that force you to write the code yourself. No copy-pasting allowed.</p>
+          </div>
+        </div>
+        <div class="method-connector"></div>
+        <div class="method-step">
+          <div class="method-num">5</div>
+          <div class="method-text">
+            <h6>Build a Project</h6>
+            <p>Every few chapters, a full project brings everything together in something you can actually show someone.</p>
+          </div>
+        </div>
+        <div class="method-connector"></div>
+        <div class="method-step" style="margin-bottom:0">
+          <div class="method-num">6</div>
+          <div class="method-text">
+            <h6>Revise & Reinforce</h6>
+            <p>Quick revision summaries and interview-style questions so knowledge moves from short-term to long-term memory.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="glass-card p-4 mb-4">
+          <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:18px;">
+            <i class="fas fa-list-check me-2" style="color:var(--orange)"></i>Every Chapter Contains
+          </h5>
+          <div class="chapter-include"><i class="fas fa-eye"></i><span>Visual Learning with clear diagrams and examples</span></div>
+          <div class="chapter-include"><i class="fas fa-code"></i><span>Live code examples you can try immediately</span></div>
+          <div class="chapter-include"><i class="fas fa-sticky-note"></i><span>Important notes and tips to remember</span></div>
+          <div class="chapter-include"><i class="fas fa-question-circle"></i><span>Practice questions to test your understanding</span></div>
+          <div class="chapter-include"><i class="fas fa-briefcase"></i><span>Interview questions for real exam and job prep</span></div>
+          <div class="chapter-include"><i class="fas fa-tasks"></i><span>Mini tasks to build muscle memory</span></div>
+          <div class="chapter-include"><i class="fas fa-bolt"></i><span>Quick revision summary at the end</span></div>
+          <div class="chapter-include"><i class="fas fa-chart-line"></i><span>Progress checkpoints to track your growth</span></div>
+        </div>
+
+        <div class="glass-card p-4">
+          <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:18px;">
+            <i class="fas fa-tools me-2" style="color:var(--orange)"></i>Practice & Project Philosophy
+          </h5>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div style="background:rgba(249,115,22,0.06); border:1px solid rgba(249,115,22,0.12); border-radius:10px; padding:16px;">
+                <i class="fas fa-pen-nib" style="color:var(--orange); font-size:1.2rem; margin-bottom:10px; display:block;"></i>
+                <div style="font-size:0.85rem; font-weight:600; margin-bottom:4px;">Write Every Tag</div>
+                <div style="font-size:0.78rem; color:var(--text-muted);">Type every tag by hand. The act of writing builds memory that reading cannot.</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div style="background:rgba(249,115,22,0.06); border:1px solid rgba(249,115,22,0.12); border-radius:10px; padding:16px;">
+                <i class="fas fa-ban" style="color:var(--orange); font-size:1.2rem; margin-bottom:10px; display:block;"></i>
+                <div style="font-size:0.85rem; font-weight:600; margin-bottom:4px;">Never Skip Exercises</div>
+                <div style="font-size:0.78rem; color:var(--text-muted);">Exercises aren't optional. They're where the actual learning happens.</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div style="background:rgba(249,115,22,0.06); border:1px solid rgba(249,115,22,0.12); border-radius:10px; padding:16px;">
+                <i class="fas fa-hammer" style="color:var(--orange); font-size:1.2rem; margin-bottom:10px; display:block;"></i>
+                <div style="font-size:0.85rem; font-weight:600; margin-bottom:4px;">Build Every Project</div>
+                <div style="font-size:0.78rem; color:var(--text-muted);">Projects are the proof of learning. Don't skip them — they're the whole point.</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div style="background:rgba(249,115,22,0.06); border:1px solid rgba(249,115,22,0.12); border-radius:10px; padding:16px;">
+                <i class="fas fa-rotate" style="color:var(--orange); font-size:1.2rem; margin-bottom:10px; display:block;"></i>
+                <div style="font-size:0.85rem; font-weight:600; margin-bottom:4px;">Revise Regularly</div>
+                <div style="font-size:0.78rem; color:var(--text-muted);">Go back. Re-read. Redo exercises. Revision multiplies retention.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="philosophy-banner mt-4">
+          <p>
+            "Reading HTML is not enough. Building with HTML is where real learning happens."
+            <span>— Core Principle of This Course</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== OUTCOMES ==================== -->
+<section id="outcomes" style="background:#0d1829; padding:90px 0;">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="section-eyebrow">&lt;student-outcomes&gt;</div>
+        <h2 class="section-title">What You'll Be Able to Do</h2>
+        <p class="section-desc mb-5">By the time you complete HTML Mastery with Nilansha, you won't just understand HTML — you'll build with it confidently, and you'll be fully prepared for what comes next.</p>
+
+        <div class="outcome-item">
+          <div class="outcome-icon"><i class="fas fa-check"></i></div>
+          <div class="outcome-text">Create fully structured, professional HTML webpages from scratch</div>
+        </div>
+        <div class="outcome-item">
+          <div class="outcome-icon"><i class="fas fa-check"></i></div>
+          <div class="outcome-text">Build complex forms with proper validation and multiple input types</div>
+        </div>
+        <div class="outcome-item">
+          <div class="outcome-icon"><i class="fas fa-check"></i></div>
+          <div class="outcome-text">Design well-structured data tables with rowspan and colspan</div>
+        </div>
+        <div class="outcome-item">
+          <div class="outcome-icon"><i class="fas fa-check"></i></div>
+          <div class="outcome-text">Create multi-page websites connected with working navigation links</div>
+        </div>
+        <div class="outcome-item">
+          <div class="outcome-icon"><i class="fas fa-check"></i></div>
+          <div class="outcome-text">Write semantic HTML that search engines and screen readers understand</div>
+        </div>
+        <div class="outcome-item">
+          <div class="outcome-icon"><i class="fas fa-check"></i></div>
+          <div class="outcome-text">Apply accessibility fundamentals for inclusive web development</div>
+        </div>
+        <div class="outcome-item">
+          <div class="outcome-icon"><i class="fas fa-check"></i></div>
+          <div class="outcome-text">Understand SEO basics and how HTML structure affects rankings</div>
+        </div>
+        <div class="outcome-item">
+          <div class="outcome-icon"><i class="fas fa-check"></i></div>
+          <div class="outcome-text">Be fully prepared to start learning CSS and JavaScript with confidence</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="glass-card mb-4 overflow-hidden" style="border: 1px solid rgba(249,115,22,0.25);">
+          <div class="code-card-header py-2 px-3 d-flex align-items-center" style="background: rgba(13,24,41,0.5); border-bottom: 1px solid rgba(249,115,22,0.15); gap: 6px;">
+            <div class="code-dot red" style="width: 8px; height: 8px; border-radius: 50%; background: #ff5f56;"></div>
+            <div class="code-dot yellow" style="width: 8px; height: 8px; border-radius: 50%; background: #ffbd2e;"></div>
+            <div class="code-dot green" style="width: 8px; height: 8px; border-radius: 50%; background: #27c93f;"></div>
+            <span class="code-file ms-2" style="font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--text-muted);">&lt;course-scope&gt;</span>
+          </div>
+          <div class="p-4">
+            <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:18px;">
+              <i class="fab fa-html5 me-2" style="color:var(--orange)"></i>Course Scope — Only HTML
+            </h5>
+            <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.75; margin-bottom:16px;">
+              This course has a deliberate, disciplined focus. No CSS. No JavaScript. That's not a limitation — it's a strategy.
+            </p>
+            <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.75; margin:0;">
+              Beginners who try to learn HTML, CSS, and JS simultaneously often get overwhelmed and quit. This course gives you one thing to master completely, so when you move to CSS, you have a rock-solid foundation — not a shaky one.
+            </p>
+            <div class="mt-4 d-flex flex-wrap gap-2">
+              <div style="background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.2); border-radius:8px; padding:10px 16px; font-size:0.82rem; font-weight:600; color:var(--green);">
+                <i class="fas fa-check-circle me-2"></i>HTML — Complete Mastery
+              </div>
+              <div style="background:rgba(148,163,184,0.06); border:1px solid rgba(148,163,184,0.12); border-radius:8px; padding:10px 16px; font-size:0.82rem; font-weight:600; color:var(--text-muted);">
+                <i class="fas fa-arrow-right me-2"></i>CSS — Next Course
+              </div>
+              <div style="background:rgba(148,163,184,0.06); border:1px solid rgba(148,163,184,0.12); border-radius:8px; padding:10px 16px; font-size:0.82rem; font-weight:600; color:var(--text-muted);">
+                <i class="fas fa-arrow-right me-2"></i>JavaScript — After CSS
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course stats -->
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="glass-card p-3 text-center">
+              <div style="font-family:'Outfit',sans-serif; font-size:2.2rem; font-weight:900; color:var(--orange);">8</div>
+              <div style="font-size:0.8rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Chapters</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="glass-card p-3 text-center">
+              <div style="font-family:'Outfit',sans-serif; font-size:2.2rem; font-weight:900; color:var(--orange);">6</div>
+              <div style="font-size:0.8rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Total Projects</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="glass-card p-3 text-center">
+              <div style="font-family:'Outfit',sans-serif; font-size:2.2rem; font-weight:900; color:var(--orange);">60+</div>
+              <div style="font-size:0.8rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">HTML Tags</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="glass-card p-3 text-center">
+              <div style="font-family:'Outfit',sans-serif; font-size:2.2rem; font-weight:900; color:var(--green);">Free</div>
+              <div style="font-size:0.8rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">Always</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== NEXT CHAPTER CTA ==================== -->
+<section id="chapter1-cta" style="padding:90px 0;">
+  <div class="container">
+    <div class="next-chapter" data-aos="zoom-in">
+      <div class="position-relative">
+        <div class="section-eyebrow d-block text-center mb-2">&lt;what-is-next&gt;</div>
+        <h2>Chapter 1 — Introduction to Web Development</h2>
+        <p>You've seen the roadmap. You know the instructor. You understand why HTML matters. Now it's time to open VS Code and write your first tag. Everything starts here.</p>
+
+        <div class="ch1-preview" data-aos="fade-up" data-aos-delay="100">
+          <span class="ch1-pill">What is HTML?</span>
+          <span class="ch1-pill">What are Websites?</span>
+          <span class="ch1-pill">Frontend vs Backend</span>
+          <span class="ch1-pill">Browser Basics</span>
+          <span class="ch1-pill">VS Code Setup</span>
+          <span class="ch1-pill">Your First HTML File</span>
+        </div>
+
+        <a href="coming-soon.html" class="btn-start-chapter" data-aos="fade-up" data-aos-delay="200">
+          Start Chapter 1 <i class="fas fa-arrow-right"></i>
+        </a>
+
+        <div class="mt-4" style="font-size:0.82rem; color:var(--text-muted);">
+          <i class="fas fa-clock me-1" style="color:var(--orange)"></i> ~45 minutes &nbsp;·&nbsp;
+          <i class="fas fa-signal me-1" style="color:var(--orange)"></i> Absolute Beginner &nbsp;·&nbsp;
+          <i class="fas fa-infinity me-1" style="color:var(--green)"></i> 100% Free
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5 col-md-6">
+        <div class="footer-brand">HTML Mastery <span>with Nilansha</span></div>
+        <p class="footer-desc">From Absolute Beginner to Building Structured Websites with HTML. Completely free. Built for students.</p>
+        <div class="mt-3">
+          <a href="https://github.com/DeveloperNilansha" class="social-btn" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nilansha-pandey-9586b026b/" class="social-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:nilansha777@gmail.com" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-6">
+        <div style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:14px;">Chapters</div>
+        <a class="footer-link" href="coming-soon.html">Chapter 1 – Web Dev Intro</a>
+        <a class="footer-link" href="coming-soon.html">Chapter 2 – HTML Structure</a>
+        <a class="footer-link" href="coming-soon.html">Chapter 3 – Text Formatting</a>
+        <a class="footer-link" href="coming-soon.html">Chapter 4 – Links & Media</a>
+        <a class="footer-link" href="coming-soon.html">All Chapters →</a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-6">
+        <div style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:14px;">Course Links</div>
+        <a class="footer-link" href="#roadmap">Course Roadmap</a>
+        <a class="footer-link" href="#instructor">About Instructor</a>
+        <a class="footer-link" href="#method">How It Works</a>
+        <a class="footer-link" href="#outcomes">Student Outcomes</a>
+        <a class="footer-link" href="#chapter1-cta">Start Learning</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 HTML Mastery with Nilansha. All rights reserved.</div>
+      <div>Let's Learn HTML with <a href="https://www.linkedin.com/in/nilansha-pandey-9586b026b/" style="color:var(--orange); text-decoration:none; font-weight:600;" target="_blank" rel="noopener noreferrer">Nilansha</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
