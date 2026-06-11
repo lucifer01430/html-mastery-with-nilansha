@@ -45,7 +45,7 @@ Our curriculum is built around five core teaching pillars:
 <table align="center" style="border: none; border-collapse: collapse;">
   <tr style="border: none;">
     <td width="200px" style="border: none; vertical-align: top; text-align: center;">
-      <img src="assets/img/profile.png" alt="Nilansha Pandey" width="160px" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+      <img src="assets/img/profile.png" alt="Nilansha Pandey" width="160px" style="border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
     </td>
     <td style="border: none; vertical-align: top; padding-left: 20px;">
       <h3>Nilansha Pandey</h3>
@@ -178,7 +178,7 @@ This course is tailor-made for:
 
 The entire course is fully deployed and accessible online:
 
-👉 **[Visit Course Website](YOUR_GITHUB_PAGES_URL)**
+👉 **[Visit Course Website](https://lucifer01430.github.io/html-mastery-with-nilansha/)**
 
 ---
 
