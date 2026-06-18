@@ -69,6 +69,21 @@
     msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
+  /* === UNDO COMPLETION === */
+  function undoComplete() {
+    localStorage.removeItem('html_chapter_1');
+    const btn = document.getElementById('btn-complete');
+    if (btn) {
+      btn.innerHTML = '<i class="fas fa-trophy"></i> Mark Chapter 1 as Complete';
+      btn.disabled = false;
+      btn.style.background = '';
+    }
+    const msg = document.getElementById('completion-msg');
+    if (msg) {
+      msg.classList.remove('show');
+    }
+  }
+
   /* === RESTORE STATE === */
   window.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('html_chapter_1') === 'completed') {

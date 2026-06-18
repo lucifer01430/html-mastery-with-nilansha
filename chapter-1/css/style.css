@@ -429,6 +429,29 @@
     #completion-msg { display: none; margin-top: 18px; }
     #completion-msg.show { display: block; }
 
+    .btn-undo {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      color: #f87171;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 14px;
+    }
+    .btn-undo:hover {
+      background: rgba(239, 68, 68, 0.16);
+      border-color: rgba(239, 68, 68, 0.45);
+      color: #ef4444;
+      transform: translateY(-1px);
+    }
+
     /* ====== ANALOGY CARD ====== */
     .analogy-strip {
       background: linear-gradient(90deg, rgba(249,115,22,0.07), rgba(249,115,22,0.03));
