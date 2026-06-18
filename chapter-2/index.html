@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chapter 1 – Introduction to Web Development | HTML Mastery with Nilansha" />
+  <title>Chapter 1 – Introduction to Web Development | HTML Mastery with Nilansha</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- Reading Progress -->
+<div id="reading-bar"></div>
+
+<!-- ====== NAVBAR ====== -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">HTML Mastery <span>with Nilansha</span></a>
+    <div class="d-flex align-items-center gap-2 ms-auto">
+      <span class="chapter-badge d-none d-sm-inline">Chapter 1 of 8</span>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="fas fa-bars" style="color:var(--text)"></i>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-3 align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="#concepts">Concepts</a></li>
+        <li class="nav-item"><a class="nav-link" href="#practice">Practice</a></li>
+        <li class="nav-item"><a class="nav-link" href="#interview">Interview Q</a></li>
+        <li class="nav-item ms-1"><a class="nav-link btn-nav-cta" href="#next-chapter">Chapter 2 →</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ====== BREADCRUMB ====== -->
+<div class="breadcrumb-bar">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="../index.html"><i class="fas fa-home me-1"></i>Course Home</a></li>
+        <li class="breadcrumb-item active">Chapter 1 – Introduction to Web Development</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- ====== HERO ====== -->
+<section class="ch-hero">
+  <div class="hero-grid"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <div class="ch-eyebrow" data-aos="fade-up">
+          <i class="fas fa-seedling" style="color:var(--orange)"></i>
+          Chapter 1 &nbsp;·&nbsp; Foundation Level
+        </div>
+        <h1 class="ch-title" data-aos="fade-up" data-aos-delay="70">
+          Introduction to<br /><span class="accent">Web Development</span>
+        </h1>
+        <p class="ch-subtitle" data-aos="fade-up" data-aos-delay="140">
+          Before you write a single tag, understand the world those tags live in. This chapter is your launchpad — the mental model that makes everything else click.
+        </p>
+        <div class="ch-meta" data-aos="fade-up" data-aos-delay="200">
+          <div class="ch-meta-item"><i class="fas fa-clock"></i> ~45 minutes</div>
+          <div class="ch-meta-item"><i class="fas fa-signal"></i> Absolute Beginner</div>
+          <div class="ch-meta-item"><i class="fas fa-list-check"></i> 10 Practice Questions</div>
+          <div class="ch-meta-item"><i class="fas fa-hammer"></i> 1 Mini Task</div>
+        </div>
+      </div>
+      <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
+        <!-- Chapter connection card -->
+        <div class="g-card p-3">
+          <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px;">Your Learning Path</div>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="padding:10px 14px; background:rgba(34,197,94,0.07); border:1px solid rgba(34,197,94,0.2); border-radius:9px; display:flex; align-items:center; gap:10px;">
+              <i class="fas fa-check-circle" style="color:var(--green)"></i>
+              <div>
+                <div style="font-size:0.8rem; font-weight:700; color:var(--green);">Chapter 0 — Completed</div>
+                <div style="font-size:0.72rem; color:var(--text-muted);">Course Introduction & Roadmap</div>
+              </div>
+            </div>
+            <div style="text-align:center; color:var(--orange); font-size:0.9rem;"><i class="fas fa-arrow-down"></i></div>
+            <div style="padding:10px 14px; background:rgba(249,115,22,0.08); border:1.5px solid rgba(249,115,22,0.35); border-radius:9px; display:flex; align-items:center; gap:10px;">
+              <i class="fas fa-circle-dot" style="color:var(--orange)"></i>
+              <div>
+                <div style="font-size:0.8rem; font-weight:700; color:var(--orange-light);">Chapter 1 — You Are Here</div>
+                <div style="font-size:0.72rem; color:var(--text-muted);">Introduction to Web Development</div>
+              </div>
+            </div>
+            <div style="text-align:center; color:#334155; font-size:0.9rem;"><i class="fas fa-arrow-down"></i></div>
+            <div style="padding:10px 14px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:9px; display:flex; align-items:center; gap:10px; opacity:0.6;">
+              <i class="fas fa-lock" style="color:var(--text-muted)"></i>
+              <div>
+                <div style="font-size:0.8rem; font-weight:700; color:var(--text-muted);">Chapter 2 — Coming Up</div>
+                <div style="font-size:0.72rem; color:var(--text-muted);">Basic HTML Structure</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MAIN LAYOUT ====== -->
+<div class="container" style="padding-top:64px; padding-bottom:64px;">
+  <div class="row g-5">
+
+    <!-- ===== LEFT: CONTENT ===== -->
+    <div class="col-lg-9">
+
+      <!-- === LEARNING OBJECTIVES === -->
+      <div class="g-card p-4 mb-5" id="objectives" data-aos="fade-up">
+        <div class="sec-eyebrow">Learning Objectives</div>
+        <h2 class="sec-title" style="font-size:1.5rem;">By the End of This Chapter, You Will:</h2>
+        <div class="orange-rule"></div>
+        <div class="objective-item">
+          <div class="obj-num">01</div>
+          <div class="obj-text">Define HTML and explain its purpose in building web pages</div>
+        </div>
+        <div class="objective-item">
+          <div class="obj-num">02</div>
+          <div class="obj-text">Differentiate between frontend and backend development with real examples</div>
+        </div>
+        <div class="objective-item">
+          <div class="obj-num">03</div>
+          <div class="obj-text">Understand the relationship between HTML, CSS, and JavaScript</div>
+        </div>
+        <div class="objective-item">
+          <div class="obj-num">04</div>
+          <div class="obj-text">Trace exactly what happens when a user visits a website (step by step)</div>
+        </div>
+        <div class="objective-item">
+          <div class="obj-num">05</div>
+          <div class="obj-text">Identify the role of a web browser and its rendering engine</div>
+        </div>
+        <div class="objective-item">
+          <div class="obj-num">06</div>
+          <div class="obj-text">Install and configure Visual Studio Code with Live Server</div>
+        </div>
+        <div class="objective-item">
+          <div class="obj-num">07</div>
+          <div class="obj-text">Create, save, and open your very first HTML file in a browser</div>
+        </div>
+      </div>
+
+      <!-- === SECTION 1: WHAT IS HTML === -->
+      <div id="concepts" class="mb-5" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 1</span>
+        <h2 class="sec-title">What is HTML?</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">HTML stands for <strong style="color:var(--orange)">HyperText Markup Language</strong>. It is the standard language used to create and structure web pages. Think of it as the skeleton — the load-bearing structure that everything else is built on top of.</p>
+
+        <div class="callout info mb-4">
+          <div class="callout-icon"><i class="fas fa-info-circle"></i></div>
+          <div class="callout-content">
+            <strong>HTML is NOT a programming language.</strong>
+            It cannot perform calculations, make decisions, or store data. It describes structure — it tells a browser what things are, not what to do with them.
+          </div>
+        </div>
+
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6 col-lg-4">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-heading"></i></div>
+              <h5>Headings</h5>
+              <p>Title and section titles that give content hierarchy and meaning.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-paragraph"></i></div>
+              <h5>Paragraphs</h5>
+              <p>Blocks of text content that form the main body of a page.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-image"></i></div>
+              <h5>Images</h5>
+              <p>Visual content embedded into pages to communicate visually.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-link"></i></div>
+              <h5>Hyperlinks</h5>
+              <p>Connections between pages and resources — the "hyper" in HTML.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-table"></i></div>
+              <h5>Tables</h5>
+              <p>Organized grids of data — results, schedules, comparisons.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-wpforms"></i></div>
+              <h5>Forms</h5>
+              <p>Input fields, buttons, dropdowns — the user's voice on a webpage.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- WHY HTML MATTERS -->
+        <div class="g-card p-4 mb-4">
+          <h5 class="fw-bold mb-16" style="margin-bottom:14px;"><i class="fas fa-globe me-2" style="color:var(--orange)"></i>HTML Powers Every Website You've Ever Visited</h5>
+          <div class="row g-3">
+            <div class="col-6 col-sm-4 col-md-3">
+              <div style="text-align:center; padding:16px 10px; background:rgba(249,115,22,0.06); border-radius:10px; border:1px solid rgba(249,115,22,0.1);">
+                <div style="font-size:1.6rem; margin-bottom:6px;">🔍</div>
+                <div style="font-size:0.8rem; font-weight:700;">Google</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div style="text-align:center; padding:16px 10px; background:rgba(249,115,22,0.06); border-radius:10px; border:1px solid rgba(249,115,22,0.1);">
+                <div style="font-size:1.6rem; margin-bottom:6px;">▶️</div>
+                <div style="font-size:0.8rem; font-weight:700;">YouTube</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div style="text-align:center; padding:16px 10px; background:rgba(249,115,22,0.06); border-radius:10px; border:1px solid rgba(249,115,22,0.1);">
+                <div style="font-size:1.6rem; margin-bottom:6px;">🛒</div>
+                <div style="font-size:0.8rem; font-weight:700;">Amazon</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div style="text-align:center; padding:16px 10px; background:rgba(249,115,22,0.06); border-radius:10px; border:1px solid rgba(249,115,22,0.1);">
+                <div style="font-size:1.6rem; margin-bottom:6px;">💻</div>
+                <div style="font-size:0.8rem; font-weight:700;">GitHub</div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:14px; margin-bottom:0;">Every single one of these — the navigation, the buttons, the cards, the headings — is structured by HTML. Without it, browsers have nothing to render.</p>
+        </div>
+
+        <!-- ANALOGY -->
+        <div class="analogy-strip" data-aos="fade-up">
+          <div class="analogy-icon">🏠</div>
+          <div>
+            <h5>Real World Analogy — Think of a House</h5>
+            <p>
+              <strong style="color:var(--orange-light);">HTML</strong> builds the walls, floors, doors, and rooms — the entire structure.<br />
+              <strong style="color:var(--blue);">CSS</strong> paints the walls, chooses the furniture, adds the aesthetic — everything visual.<br />
+              <strong style="color:var(--purple);">JavaScript</strong> wires up the electricity, installs the smart locks, adds the interactivity.<br /><br />
+              You cannot decorate a house that doesn't exist. You cannot wire electricity through rooms that haven't been built. <strong style="color:var(--text)">HTML comes first. Always.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- === SECTION 2: FRONTEND vs BACKEND === -->
+      <div class="mb-5" id="frontend-backend" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 2</span>
+        <h2 class="sec-title">Frontend vs Backend Development</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">Every web application has two sides. As an HTML learner, you're entering the frontend world — but understanding both sides gives you the full picture of how web development actually works.</p>
+
+        <div class="row g-4 mb-4">
+          <div class="col-md-6">
+            <div class="g-card h-100" style="border-color:rgba(249,115,22,0.25);">
+              <div style="background:rgba(249,115,22,0.08); padding:18px 22px; border-bottom:1px solid rgba(249,115,22,0.15); border-radius:var(--radius-lg) var(--radius-lg) 0 0;">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <i class="fas fa-display" style="color:var(--orange); font-size:1.2rem;"></i>
+                  <h5 style="margin:0; font-size:1rem; font-weight:800; color:var(--orange-light);">Frontend Development</h5>
+                </div>
+                <p style="font-size:0.78rem; color:var(--text-muted); margin:6px 0 0;">What users SEE and TOUCH</p>
+              </div>
+              <div style="padding:20px 22px;">
+                <div style="margin-bottom:12px; font-size:0.85rem; color:var(--text-muted); line-height:1.7;">Everything visible on a webpage — the layout, buttons, images, and text that a user directly interacts with in their browser.</div>
+                <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-muted); margin-bottom:8px;">Examples</div>
+                <div style="font-size:0.83rem; color:var(--text-soft); display:flex; flex-direction:column; gap:4px;">
+                  <div><i class="fas fa-chevron-right me-2" style="color:var(--orange); font-size:0.65rem;"></i>Navigation menus</div>
+                  <div><i class="fas fa-chevron-right me-2" style="color:var(--orange); font-size:0.65rem;"></i>Buttons and forms</div>
+                  <div><i class="fas fa-chevron-right me-2" style="color:var(--orange); font-size:0.65rem;"></i>Images and carousels</div>
+                  <div><i class="fas fa-chevron-right me-2" style="color:var(--orange); font-size:0.65rem;"></i>Search bars</div>
+                </div>
+                <div style="margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.04);">
+                  <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-muted); margin-bottom:8px;">Technologies</div>
+                  <span class="e-pill html">HTML</span>
+                  <span class="e-pill css">CSS</span>
+                  <span class="e-pill js">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card h-100" style="border-color:rgba(96,165,250,0.2);">
+              <div style="background:rgba(96,165,250,0.07); padding:18px 22px; border-bottom:1px solid rgba(96,165,250,0.12); border-radius:var(--radius-lg) var(--radius-lg) 0 0;">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <i class="fas fa-server" style="color:var(--blue); font-size:1.2rem;"></i>
+                  <h5 style="margin:0; font-size:1rem; font-weight:800; color:var(--blue);">Backend Development</h5>
+                </div>
+                <p style="font-size:0.78rem; color:var(--text-muted); margin:6px 0 0;">What users NEVER see — but always benefit from</p>
+              </div>
+              <div style="padding:20px 22px;">
+                <div style="margin-bottom:12px; font-size:0.85rem; color:var(--text-muted); line-height:1.7;">The server-side logic, databases, and processing that make websites actually function — hidden completely from the user's view.</div>
+                <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-muted); margin-bottom:8px;">Examples</div>
+                <div style="font-size:0.83rem; color:var(--text-soft); display:flex; flex-direction:column; gap:4px;">
+                  <div><i class="fas fa-chevron-right me-2" style="color:var(--blue); font-size:0.65rem;"></i>User authentication</div>
+                  <div><i class="fas fa-chevron-right me-2" style="color:var(--blue); font-size:0.65rem;"></i>Database management</div>
+                  <div><i class="fas fa-chevron-right me-2" style="color:var(--blue); font-size:0.65rem;"></i>Payment processing</div>
+                  <div><i class="fas fa-chevron-right me-2" style="color:var(--blue); font-size:0.65rem;"></i>Data storage & retrieval</div>
+                </div>
+                <div style="margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.04);">
+                  <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-muted); margin-bottom:8px;">Technologies</div>
+                  <span style="background:rgba(96,165,250,0.1); border:1px solid rgba(96,165,250,0.2); color:var(--blue); font-size:0.72rem; font-weight:600; padding:3px 10px; border-radius:5px; margin:2px;">Python</span>
+                  <span style="background:rgba(96,165,250,0.1); border:1px solid rgba(96,165,250,0.2); color:var(--blue); font-size:0.72rem; font-weight:600; padding:3px 10px; border-radius:5px; margin:2px;">Node.js</span>
+                  <span style="background:rgba(96,165,250,0.1); border:1px solid rgba(96,165,250,0.2); color:var(--blue); font-size:0.72rem; font-weight:600; padding:3px 10px; border-radius:5px; margin:2px;">Java</span>
+                  <span style="background:rgba(96,165,250,0.1); border:1px solid rgba(96,165,250,0.2); color:var(--blue); font-size:0.72rem; font-weight:600; padding:3px 10px; border-radius:5px; margin:2px;">PHP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="g-card" style="overflow:hidden;" data-aos="fade-up">
+          <div style="padding:16px 22px; background:rgba(249,115,22,0.06); border-bottom:1px solid var(--border);">
+            <span style="font-size:0.82rem; font-weight:700; color:var(--orange-light);"><i class="fas fa-table me-2"></i>Side-by-Side Comparison</span>
+          </div>
+          <div style="padding:0;">
+            <table class="compare-table w-100">
+              <thead>
+                <tr>
+                  <th>Aspect</th>
+                  <th style="color:var(--orange-light);">Frontend</th>
+                  <th style="color:var(--blue);">Backend</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Visibility</td><td>Visible to users</td><td>Hidden from users</td></tr>
+                <tr><td>Primary Concern</td><td>User Interface & Experience</td><td>Business Logic & Data</td></tr>
+                <tr><td>Runs On</td><td>User's Browser</td><td>Server</td></tr>
+                <tr><td>Your Focus Now</td><td style="color:var(--green); font-weight:600;">✓ This Course</td><td style="color:var(--text-muted);">Future learning</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- === SECTION 3: HTML + CSS + JS === -->
+      <div class="mb-5" id="three-layers" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 3</span>
+        <h2 class="sec-title">HTML, CSS, and JavaScript</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">Modern websites are built with three technologies that each have a distinct, irreplaceable role. Think of them as three members of one team — each doing what only they can do.</p>
+
+        <div class="g-card mb-4" style="overflow:hidden;">
+          <div class="layer-card html">
+            <span class="layer-tag html"><i class="fas fa-code"></i> HTML</span>
+            <h5>Structure — The Skeleton</h5>
+            <p>HTML defines what content exists and what it means. A paragraph is a paragraph. A heading is a heading. An image is an image. HTML labels everything so browsers (and search engines, and screen readers) understand the page.</p>
+            <div class="example-pills">
+              <span class="e-pill html">Headings</span>
+              <span class="e-pill html">Paragraphs</span>
+              <span class="e-pill html">Images</span>
+              <span class="e-pill html">Forms</span>
+              <span class="e-pill html">Tables</span>
+            </div>
+          </div>
+          <div style="height:1px; background:var(--border);"></div>
+          <div class="layer-card css">
+            <span class="layer-tag css"><i class="fas fa-palette"></i> CSS</span>
+            <h5>Presentation — The Appearance</h5>
+            <p>CSS takes the raw structure HTML provides and makes it beautiful. Colors, fonts, spacing, layouts, animations, responsive behavior — all CSS. Without it, websites look like unformatted text documents.</p>
+            <div class="example-pills">
+              <span class="e-pill css">Colors & Fonts</span>
+              <span class="e-pill css">Layouts</span>
+              <span class="e-pill css">Animations</span>
+              <span class="e-pill css">Responsive Design</span>
+            </div>
+          </div>
+          <div style="height:1px; background:var(--border);"></div>
+          <div class="layer-card js">
+            <span class="layer-tag js"><i class="fas fa-bolt"></i> JavaScript</span>
+            <h5>Behavior — The Brain</h5>
+            <p>JavaScript makes pages dynamic and interactive. It responds to user actions, updates content without reloading the page, validates forms, fetches data, and powers everything from dropdown menus to full-blown web applications.</p>
+            <div class="example-pills">
+              <span class="e-pill js">Form Validation</span>
+              <span class="e-pill js">Dynamic Content</span>
+              <span class="e-pill js">API Calls</span>
+              <span class="e-pill js">Interactivity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car analogy -->
+        <div class="analogy-strip" data-aos="fade-up">
+          <div class="analogy-icon">🚗</div>
+          <div>
+            <h5>The Car Analogy</h5>
+            <p>
+              <strong style="color:var(--orange-light);">HTML</strong> is the car's frame and body — the structure that makes it a car.<br />
+              <strong style="color:var(--blue);">CSS</strong> is the paint, interior design, seat covers — the look and feel.<br />
+              <strong style="color:var(--purple);">JavaScript</strong> is the engine, brakes, and infotainment — the things that actually run and respond.<br /><br />
+              You don't need to learn all three at once. <strong style="color:var(--text);">This course masters HTML first.</strong> When your structure is solid, CSS and JavaScript become dramatically easier to learn.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout warn mt-4">
+          <div class="callout-icon"><i class="fas fa-triangle-exclamation"></i></div>
+          <div class="callout-content">
+            <strong>Important Course Scope</strong>
+            This course covers HTML only — no CSS, no JavaScript. That's not a limitation. That's the strategy. Students who try to learn all three simultaneously often struggle with all three. Master this one, and the others become much easier.
+          </div>
+        </div>
+      </div>
+
+      <!-- === SECTION 4: HOW WEBSITES WORK === -->
+      <div class="mb-5" id="how-web-works" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 4</span>
+        <h2 class="sec-title">How Websites Work</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">When you type a URL and press Enter, an entire sequence of events fires off in milliseconds. Here's exactly what happens — and why it matters for understanding what HTML actually does.</p>
+
+        <!-- Step-by-step flow -->
+        <div class="g-card p-4 mb-4" data-aos="fade-up">
+          <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:22px;"><i class="fas fa-route me-2" style="color:var(--orange)"></i>The Request-Response Cycle</h5>
+          <div class="flow-wrap justify-content-between gap-2">
+            <div class="flow-node">
+              <span class="f-icon">🧑‍💻</span>
+              <div class="f-label">User</div>
+              <div class="f-sub">Types a URL</div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="flow-node">
+              <span class="f-icon">🌐</span>
+              <div class="f-label">Browser</div>
+              <div class="f-sub">Sends request</div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="flow-node">
+              <span class="f-icon">🖥️</span>
+              <div class="f-label">Server</div>
+              <div class="f-sub">Processes it</div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="flow-node">
+              <span class="f-icon">📦</span>
+              <div class="f-label">Files</div>
+              <div class="f-sub">Sent back</div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="flow-node" style="border-color:rgba(249,115,22,0.35);">
+              <span class="f-icon">✅</span>
+              <div class="f-label">Webpage</div>
+              <div class="f-sub" style="color:var(--green);">Displayed!</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed steps -->
+        <div class="g-card" style="overflow:hidden;" data-aos="fade-up">
+          <div style="padding:16px 22px; background:rgba(249,115,22,0.06); border-bottom:1px solid var(--border);">
+            <span style="font-size:0.82rem; font-weight:700; color:var(--orange-light);"><i class="fas fa-list-ol me-2"></i>Step-by-Step Breakdown</span>
+          </div>
+          <div style="padding:22px 24px;">
+            <div class="setup-step">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h6>User Enters a URL</h6>
+                <p>You type <code style="background:rgba(249,115,22,0.1); color:var(--orange-light); padding:2px 8px; border-radius:4px; font-family:'JetBrains Mono',monospace; font-size:0.82rem;">www.example.com</code> into your browser's address bar and press Enter.</p>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h6>Browser Sends a Request</h6>
+                <p>Your browser contacts a DNS server to find the IP address of that domain, then sends an HTTP request to the appropriate web server.</p>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h6>Server Processes the Request</h6>
+                <p>The server receives the request, locates the correct files (HTML, CSS, JS, images), and prepares a response.</p>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h6>Server Sends Files Back</h6>
+                <p>The server responds with the HTML file first, then the browser reads it and requests any additional CSS, JavaScript, and image files referenced inside.</p>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="step-num" style="background:linear-gradient(135deg,var(--green),#16a34a);">5</div>
+              <div class="step-content">
+                <h6>Browser Renders the Page</h6>
+                <p>The browser parses the HTML, applies the CSS, executes the JavaScript, and paints pixels on your screen. You see a webpage. All of this happens in under one second.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout tip mt-4">
+          <div class="callout-icon"><i class="fas fa-lightbulb"></i></div>
+          <div class="callout-content">
+            <strong>Why Does This Matter to You?</strong>
+            You're learning HTML — the very first file the browser reads. When a page loads, the browser reads your HTML first and builds the entire structure from it. Understanding this flow helps you understand <em>why</em> HTML structure matters so much for performance, SEO, and accessibility.
+          </div>
+        </div>
+      </div>
+
+      <!-- === SECTION 5: BROWSERS === -->
+      <div class="mb-5" id="browsers" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 5</span>
+        <h2 class="sec-title">Web Browsers</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">A web browser is not just a window to the internet. It's a complex application that reads your HTML, applies CSS, runs JavaScript, and turns code into a visual experience — all in real time.</p>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6">
+            <div class="g-card h-100" style="overflow:hidden;">
+              <div style="padding:16px 22px; border-bottom:1px solid var(--border);">
+                <span style="font-size:0.82rem; font-weight:700; color:var(--orange-light);"><i class="fas fa-globe me-2" style="color:var(--orange)"></i>Popular Web Browsers</span>
+              </div>
+              <div class="browser-row">
+                <div class="browser-icon" style="background:rgba(249,115,22,0.1);">🟡</div>
+                <div>
+                  <div class="browser-name">Google Chrome</div>
+                  <div style="font-size:0.78rem; color:var(--text-muted);">Most popular globally. Recommended for this course.</div>
+                </div>
+                <div class="browser-engine">Blink</div>
+              </div>
+              <div class="browser-row">
+                <div class="browser-icon" style="background:rgba(96,165,250,0.1);">🔵</div>
+                <div>
+                  <div class="browser-name">Microsoft Edge</div>
+                  <div style="font-size:0.78rem; color:var(--text-muted);">Chromium-based. Built into Windows 10/11.</div>
+                </div>
+                <div class="browser-engine">Blink</div>
+              </div>
+              <div class="browser-row">
+                <div class="browser-icon" style="background:rgba(249,115,22,0.1);">🦊</div>
+                <div>
+                  <div class="browser-name">Mozilla Firefox</div>
+                  <div style="font-size:0.78rem; color:var(--text-muted);">Open source. Great developer tools.</div>
+                </div>
+                <div class="browser-engine">Gecko</div>
+              </div>
+              <div class="browser-row">
+                <div class="browser-icon" style="background:rgba(167,139,250,0.1);">🍎</div>
+                <div>
+                  <div class="browser-name">Safari</div>
+                  <div style="font-size:0.78rem; color:var(--text-muted);">Apple's browser. Default on Mac & iPhone.</div>
+                </div>
+                <div class="browser-engine">WebKit</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="g-card h-100 p-4">
+              <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:16px;"><i class="fas fa-cogs me-2" style="color:var(--orange)"></i>What a Browser Actually Does</h5>
+              <div style="display:flex; flex-direction:column; gap:10px;">
+                <div style="display:flex; gap:10px; align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green); margin-top:3px;"></i>
+                  <div style="font-size:0.86rem; color:var(--text-soft);">Reads and parses your HTML document from top to bottom</div>
+                </div>
+                <div style="display:flex; gap:10px; align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green); margin-top:3px;"></i>
+                  <div style="font-size:0.86rem; color:var(--text-soft);">Builds a Document Object Model (DOM) — a tree of elements</div>
+                </div>
+                <div style="display:flex; gap:10px; align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green); margin-top:3px;"></i>
+                  <div style="font-size:0.86rem; color:var(--text-soft);">Applies CSS styling to each element in the DOM</div>
+                </div>
+                <div style="display:flex; gap:10px; align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green); margin-top:3px;"></i>
+                  <div style="font-size:0.86font-size:0.86rem; color:var(--text-soft);">Executes JavaScript to add behavior and dynamic content</div>
+                </div>
+                <div style="display:flex; gap:10px; align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green); margin-top:3px;"></i>
+                  <div style="font-size:0.86rem; color:var(--text-soft);">Paints the final visual result on your screen (pixel by pixel)</div>
+                </div>
+                <div style="display:flex; gap:10px; align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green); margin-top:3px;"></i>
+                  <div style="font-size:0.86rem; color:var(--text-soft);">Handles user interactions — clicks, scrolls, keyboard input</div>
+                </div>
+              </div>
+              <div class="callout info mt-3" style="margin:16px 0 0; padding:12px 14px;">
+                <div class="callout-icon"><i class="fas fa-tools"></i></div>
+                <div class="callout-content" style="font-size:0.8rem;">
+                  Every browser has <strong>Developer Tools</strong> (press F12). This is where you'll inspect your HTML live. Get comfortable with it early — it's your best debugging tool.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- === SECTION 6: VS CODE SETUP === -->
+      <div class="mb-5" id="vscode" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 6</span>
+        <h2 class="sec-title">Setting Up VS Code</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">Visual Studio Code (VS Code) is a free, lightweight code editor by Microsoft. It's the industry standard for frontend developers — and the tool you'll use throughout this entire course.</p>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6">
+            <div class="g-card p-4 h-100">
+              <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:16px;"><i class="fas fa-star me-2" style="color:var(--orange)"></i>Why VS Code?</h5>
+              <div style="display:flex; flex-direction:column; gap:10px;">
+                <div style="display:flex; gap:10px;">
+                  <i class="fas fa-feather" style="color:var(--orange); margin-top:3px;"></i>
+                  <div><strong style="font-size:0.86rem;">Lightweight</strong> — Starts fast, runs lean. Doesn't slow down your computer.</div>
+                </div>
+                <div style="display:flex; gap:10px;">
+                  <i class="fas fa-brain" style="color:var(--orange); margin-top:3px;"></i>
+                  <div><strong style="font-size:0.86rem;">IntelliSense</strong> — Auto-completes your HTML tags and attributes as you type.</div>
+                </div>
+                <div style="display:flex; gap:10px;">
+                  <i class="fas fa-puzzle-piece" style="color:var(--orange); margin-top:3px;"></i>
+                  <div><strong style="font-size:0.86rem;">Extensions</strong> — Add Live Server, Prettier, and dozens of tools in one click.</div>
+                </div>
+                <div style="display:flex; gap:10px;">
+                  <i class="fas fa-users" style="color:var(--orange); margin-top:3px;"></i>
+                  <div><strong style="font-size:0.86rem;">Industry Standard</strong> — The editor professional developers actually use every day.</div>
+                </div>
+                <div style="display:flex; gap:10px;">
+                  <i class="fas fa-circle-dollar-to-slot" style="color:var(--orange); margin-top:3px;"></i>
+                  <div><strong style="font-size:0.86rem;">100% Free</strong> — Open source. No subscriptions. No hidden costs.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="g-card p-4 h-100">
+              <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:16px;"><i class="fas fa-download me-2" style="color:var(--orange)"></i>Installation Steps</h5>
+              <div class="setup-step" style="padding:12px 0;">
+                <div class="step-num" style="width:32px;height:32px;font-size:0.75rem;">1</div>
+                <div class="step-content">
+                  <h6 style="font-size:0.85rem;">Go to code.visualstudio.com</h6>
+                  <p style="font-size:0.8rem;">Visit the official VS Code website. The download button auto-detects your operating system.</p>
+                </div>
+              </div>
+              <div class="setup-step" style="padding:12px 0;">
+                <div class="step-num" style="width:32px;height:32px;font-size:0.75rem;">2</div>
+                <div class="step-content">
+                  <h6 style="font-size:0.85rem;">Download the Installer</h6>
+                  <p style="font-size:0.8rem;">Choose the correct version for Windows, Mac, or Linux and download the installer file.</p>
+                </div>
+              </div>
+              <div class="setup-step" style="padding:12px 0;">
+                <div class="step-num" style="width:32px;height:32px;font-size:0.75rem;">3</div>
+                <div class="step-content">
+                  <h6 style="font-size:0.85rem;">Run and Install</h6>
+                  <p style="font-size:0.8rem;">Follow the installation wizard. The default settings are perfect for beginners.</p>
+                </div>
+              </div>
+              <div class="setup-step" style="padding:12px 0; border:none;">
+                <div class="step-num" style="width:32px;height:32px;font-size:0.75rem; background:linear-gradient(135deg,var(--green),#16a34a);">4</div>
+                <div class="step-content">
+                  <h6 style="font-size:0.85rem;">Install Live Server Extension</h6>
+                  <p style="font-size:0.8rem;">Open VS Code → Extensions tab (Ctrl+Shift+X) → Search "Live Server" → Install. This extension auto-refreshes your browser when you save files.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout tip">
+          <div class="callout-icon"><i class="fas fa-rocket"></i></div>
+          <div class="callout-content">
+            <strong>Live Server — Your Best Friend</strong>
+            Once Live Server is installed, right-click your HTML file in VS Code and select "Open with Live Server." Every time you save (Ctrl+S), your browser updates instantly. No manual refreshing needed throughout this entire course.
+          </div>
+        </div>
+      </div>
+
+      <!-- === SECTION 7: FIRST HTML FILE === -->
+      <div class="mb-5" id="first-file" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 7</span>
+        <h2 class="sec-title">Your First HTML File</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">This is the moment. Everything you've learned in this chapter has been leading here. Let's create your first webpage — and actually see it in a browser.</p>
+
+        <div class="g-card p-4 mb-4">
+          <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:16px;"><i class="fas fa-folder-open me-2" style="color:var(--orange)"></i>Step 1 — Create Your Project Folder</h5>
+          <div class="setup-step">
+            <div class="step-num">A</div>
+            <div class="step-content">
+              <h6>Create a folder on your Desktop (or Documents)</h6>
+              <p>Name it: <code style="background:rgba(249,115,22,0.1); color:var(--orange-light); padding:2px 8px; border-radius:4px; font-family:'JetBrains Mono',monospace;">HTML-Mastery</code></p>
+            </div>
+          </div>
+          <div class="setup-step" style="border:none;">
+            <div class="step-num">B</div>
+            <div class="step-content">
+              <h6>Open that folder in VS Code</h6>
+              <p>File → Open Folder → Select HTML-Mastery. This becomes your workspace for the course.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="g-card p-4 mb-4">
+          <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:16px;"><i class="fas fa-file-code me-2" style="color:var(--orange)"></i>Step 2 — Create Your HTML File</h5>
+          <p style="font-size:0.86rem; color:var(--text-muted); margin-bottom:16px;">In VS Code, right-click in the Explorer panel and select "New File." Name it:</p>
+          <div style="background:rgba(249,115,22,0.08); border:1px solid rgba(249,115,22,0.2); border-radius:8px; padding:12px 18px; font-family:'JetBrains Mono',monospace; font-size:0.9rem; color:var(--orange-light); margin-bottom:16px; display:inline-block;">
+            index.html
+          </div>
+          <div class="callout info" style="margin:0;">
+            <div class="callout-icon"><i class="fas fa-info-circle"></i></div>
+            <div class="callout-content"><strong>Why index.html?</strong> Browsers look for "index.html" by default when they open a folder. It's the conventional name for the main page of any website.</div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:14px;"><i class="fas fa-keyboard me-2" style="color:var(--orange)"></i>Step 3 — Type This Code</h5>
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div>
+              <span class="code-filename">HTML-Mastery / index.html</span>
+            </div>
+            <div class="code-body">
+              <div><span class="c-ln">1</span><span class="c-tg">&lt;h1&gt;</span><span class="c-tx">Hello World</span><span class="c-tg">&lt;/h1&gt;</span></div>
+              <div><span class="c-ln">2</span></div>
+              <div><span class="c-ln">3</span><span class="c-tg">&lt;p&gt;</span><span class="c-tx">Welcome to HTML Mastery with Nilansha.</span><span class="c-tg">&lt;/p&gt;</span></div>
+              <div><span class="c-ln">4</span><span class="c-tg">&lt;p&gt;</span><span class="c-tx">My HTML journey begins today.</span><span class="c-tg">&lt;/p&gt;</span></div>
+            </div>
+          </div>
+          <div class="callout warn mt-3">
+            <div class="callout-icon"><i class="fas fa-triangle-exclamation"></i></div>
+            <div class="callout-content"><strong>Type it. Don't copy it.</strong> Your fingers need to build the memory that your eyes alone cannot. The act of physically typing HTML is not symbolic — it's how the learning actually gets stored.</div>
+          </div>
+        </div>
+
+        <div class="g-card p-4">
+          <h5 style="font-size:0.95rem; font-weight:700; color:var(--orange-light); margin-bottom:14px;"><i class="fas fa-eye me-2" style="color:var(--orange)"></i>Step 4 — Open in Browser</h5>
+          <div class="setup-step">
+            <div class="step-num" style="background:linear-gradient(135deg,var(--green),#16a34a);">✓</div>
+            <div class="step-content">
+              <h6>Right-click index.html in VS Code → "Open with Live Server"</h6>
+              <p>Your browser opens and you'll see "Hello World" as a large heading and two paragraphs below it.</p>
+            </div>
+          </div>
+          <div style="background:linear-gradient(135deg,rgba(34,197,94,0.08),rgba(34,197,94,0.03)); border:1px solid rgba(34,197,94,0.2); border-radius:10px; padding:18px 22px; margin-top:6px;">
+            <div style="font-size:0.82rem; font-weight:700; color:var(--green); margin-bottom:8px;"><i class="fas fa-party-horn me-2"></i>Congratulations.</div>
+            <p style="font-size:0.86rem; color:var(--text-muted); margin:0; line-height:1.75;">You just created your first HTML webpage. What you see in the browser is real HTML rendering. The browser read your two tags — &lt;h1&gt; and &lt;p&gt; — and turned them into a formatted webpage. This is HTML working. Remember this moment.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- === REAL WORLD APPLICATIONS === -->
+      <div class="mb-5" id="real-world" data-aos="fade-up">
+        <span class="sec-eyebrow">Real World</span>
+        <h2 class="sec-title">Where HTML is Used</h2>
+        <div class="orange-rule"></div>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-4"><div class="g-card rw-card"><div class="rw-icon"><i class="fas fa-building"></i></div><div><h6>Business Websites</h6><p>Company info, services, contact pages — all HTML structure.</p></div></div></div>
+          <div class="col-sm-6 col-lg-4"><div class="g-card rw-card"><div class="rw-icon"><i class="fas fa-graduation-cap"></i></div><div><h6>Educational Platforms</h6><p>Course pages, learning systems, assignment portals.</p></div></div></div>
+          <div class="col-sm-6 col-lg-4"><div class="g-card rw-card"><div class="rw-icon"><i class="fas fa-blog"></i></div><div><h6>Blogs & Articles</h6><p>Every blog post you've read is structured in HTML.</p></div></div></div>
+          <div class="col-sm-6 col-lg-4"><div class="g-card rw-card"><div class="rw-icon"><i class="fas fa-id-badge"></i></div><div><h6>Portfolio Websites</h6><p>Developers showcase their work using HTML pages.</p></div></div></div>
+          <div class="col-sm-6 col-lg-4"><div class="g-card rw-card"><div class="rw-icon"><i class="fas fa-cart-shopping"></i></div><div><h6>E-Commerce</h6><p>Product listings, shopping carts, checkout forms — all HTML.</p></div></div></div>
+          <div class="col-sm-6 col-lg-4"><div class="g-card rw-card"><div class="rw-icon"><i class="fas fa-newspaper"></i></div><div><h6>News Portals</h6><p>Article pages, navigation menus, breaking news sections.</p></div></div></div>
+        </div>
+      </div>
+
+      <!-- === COMMON MISTAKES === -->
+      <div class="mb-5" id="mistakes" data-aos="fade-up">
+        <span class="sec-eyebrow">Watch Out</span>
+        <h2 class="sec-title">Common Beginner Mistakes</h2>
+        <div class="orange-rule"></div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="g-card mistake-card">
+              <h6>Thinking HTML is a Programming Language</h6>
+              <div class="mistake-wrong"><i class="fas fa-times m-icon"></i><span>"HTML is a programming language where you write code to make things happen."</span></div>
+              <div class="mistake-right"><i class="fas fa-check m-icon"></i><span>HTML is a <strong>markup language</strong>. It describes structure and content. It does not perform calculations, loops, or logic.</span></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card mistake-card">
+              <h6>Trying to Learn CSS Before Mastering HTML</h6>
+              <div class="mistake-wrong"><i class="fas fa-times m-icon"></i><span>Jumping into CSS or JavaScript before understanding how HTML structure works.</span></div>
+              <div class="mistake-right"><i class="fas fa-check m-icon"></i><span>HTML comes first. Without a strong structural foundation, CSS and JS become confusing and frustrating.</span></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card mistake-card">
+              <h6>Copying Examples Instead of Writing Them</h6>
+              <div class="mistake-wrong"><i class="fas fa-times m-icon"></i><span>Copy-pasting code examples to "save time" during practice sessions.</span></div>
+              <div class="mistake-right"><i class="fas fa-check m-icon"></i><span>Type every example yourself. Copy-paste feels faster but produces zero learning. Your fingers need to learn the patterns, not just your eyes.</span></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card mistake-card">
+              <h6>Ignoring Browser Developer Tools</h6>
+              <div class="mistake-wrong"><i class="fas fa-times m-icon"></i><span>Never pressing F12 or learning to inspect HTML in the browser.</span></div>
+              <div class="mistake-right"><i class="fas fa-check m-icon"></i><span>Developer Tools (F12) are your best friend. You can see exactly how any website is built. Press F12 right now on any page and start exploring.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- === INTERVIEW QUESTIONS === -->
+      <div class="mb-5" id="interview" data-aos="fade-up">
+        <span class="sec-eyebrow">Interview Prep</span>
+        <h2 class="sec-title">Interview Questions</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">These questions appear in college exams, internship interviews, and developer job interviews. Try to answer each one before revealing the answer.</p>
+
+        <div class="g-card" style="overflow:hidden;">
+          <div id="iq-list">
+            <div class="iq-item">
+              <div class="iq-q" onclick="toggleIQ(this)">
+                <div class="iq-num">01</div>
+                <div class="iq-text">What does HTML stand for?</div>
+                <i class="fas fa-chevron-down iq-toggle"></i>
+              </div>
+              <div class="iq-ans">HTML stands for <strong>HyperText Markup Language</strong>. "HyperText" refers to text that contains links to other texts or resources. "Markup Language" means it uses tags to annotate and structure content.</div>
+            </div>
+            <div class="iq-item">
+              <div class="iq-q" onclick="toggleIQ(this)">
+                <div class="iq-num">02</div>
+                <div class="iq-text">Is HTML a programming language? Explain your answer.</div>
+                <i class="fas fa-chevron-down iq-toggle"></i>
+              </div>
+              <div class="iq-ans">No. HTML is a <strong>markup language</strong>, not a programming language. Programming languages (like Python or JavaScript) have logic, conditions, loops, and variables. HTML only describes the structure and content of a webpage — it cannot make decisions or perform calculations.</div>
+            </div>
+            <div class="iq-item">
+              <div class="iq-q" onclick="toggleIQ(this)">
+                <div class="iq-num">03</div>
+                <div class="iq-text">What is the role of HTML in web development?</div>
+                <i class="fas fa-chevron-down iq-toggle"></i>
+              </div>
+              <div class="iq-ans">HTML provides the <strong>structure and content</strong> of web pages. It defines what elements exist on a page — headings, paragraphs, images, forms, links — and gives them semantic meaning. It is the foundational layer that CSS and JavaScript are built on top of.</div>
+            </div>
+            <div class="iq-item">
+              <div class="iq-q" onclick="toggleIQ(this)">
+                <div class="iq-num">04</div>
+                <div class="iq-text">What is the difference between frontend and backend development?</div>
+                <i class="fas fa-chevron-down iq-toggle"></i>
+              </div>
+              <div class="iq-ans"><strong>Frontend</strong> is everything a user sees and interacts with — built with HTML, CSS, and JavaScript, running in the browser. <strong>Backend</strong> is the server-side logic, databases, and business rules that operate invisibly — built with languages like Python, Node.js, or Java, running on servers.</div>
+            </div>
+            <div class="iq-item">
+              <div class="iq-q" onclick="toggleIQ(this)">
+                <div class="iq-num">05</div>
+                <div class="iq-text">What is the purpose of CSS and JavaScript? How do they relate to HTML?</div>
+                <i class="fas fa-chevron-down iq-toggle"></i>
+              </div>
+              <div class="iq-ans"><strong>CSS</strong> (Cascading Style Sheets) controls the visual presentation — colors, fonts, layouts, and animations. <strong>JavaScript</strong> adds interactivity and dynamic behavior — form validation, menus, content updates. Both depend on HTML as the structural foundation they operate on. HTML defines what things are; CSS defines how they look; JavaScript defines what they do.</div>
+            </div>
+            <div class="iq-item">
+              <div class="iq-q" onclick="toggleIQ(this)">
+                <div class="iq-num">06</div>
+                <div class="iq-text">Explain what happens when a user visits a website.</div>
+                <i class="fas fa-chevron-down iq-toggle"></i>
+              </div>
+              <div class="iq-ans">1. The user types a URL in their browser. 2. The browser sends an HTTP request to the server via DNS resolution. 3. The server processes the request and locates the required files. 4. The server sends HTML, CSS, JavaScript, and media files back. 5. The browser parses HTML, builds the DOM, applies CSS, executes JavaScript, and renders the visual page on screen.</div>
+            </div>
+            <div class="iq-item">
+              <div class="iq-q" onclick="toggleIQ(this)">
+                <div class="iq-num">07</div>
+                <div class="iq-text">What is a web browser and what are its responsibilities?</div>
+                <i class="fas fa-chevron-down iq-toggle"></i>
+              </div>
+              <div class="iq-ans">A web browser is software that retrieves, interprets, and displays web content. Its responsibilities include: reading and parsing HTML, applying CSS styling, executing JavaScript, rendering the visual output, handling user interactions (clicks, scrolls), and managing navigation between pages.</div>
+            </div>
+            <div class="iq-item">
+              <div class="iq-q" onclick="toggleIQ(this)">
+                <div class="iq-num">08</div>
+                <div class="iq-text">What is a rendering engine? Name the engines for Chrome, Firefox, and Safari.</div>
+                <i class="fas fa-chevron-down iq-toggle"></i>
+              </div>
+              <div class="iq-ans">A rendering engine is the core component of a browser that parses HTML and CSS and draws the visual output. Chrome and Edge use <strong>Blink</strong>. Firefox uses <strong>Gecko</strong>. Safari uses <strong>WebKit</strong>. Different engines can sometimes render the same HTML slightly differently, which is why cross-browser testing is important.</div>
+            </div>
+            <div class="iq-item">
+              <div class="iq-q" onclick="toggleIQ(this)">
+                <div class="iq-num">09</div>
+                <div class="iq-text">Why is VS Code widely used by web developers?</div>
+                <i class="fas fa-chevron-down iq-toggle"></i>
+              </div>
+              <div class="iq-ans">VS Code is popular because it is free, open-source, lightweight, and highly extensible. It provides IntelliSense (smart autocompletion), syntax highlighting, integrated terminal, Git support, and thousands of extensions. It supports all major web technologies and is actively maintained by Microsoft with a large developer community.</div>
+            </div>
+            <div class="iq-item">
+              <div class="iq-q" onclick="toggleIQ(this)">
+                <div class="iq-num">10</div>
+                <div class="iq-text">What is the purpose of the Live Server extension in VS Code?</div>
+                <i class="fas fa-chevron-down iq-toggle"></i>
+              </div>
+              <div class="iq-ans">Live Server launches a local development server and opens your HTML file in a browser. Whenever you save your file (Ctrl+S), the browser automatically refreshes to show the latest changes. This eliminates manual browser refreshing and dramatically speeds up the development-feedback loop when learning HTML.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- === PRACTICE SET === -->
+      <div class="mb-5" id="practice" data-aos="fade-up">
+        <span class="sec-eyebrow">Practice Set</span>
+        <h2 class="sec-title">Practice Questions</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">Don't skip these. Practice is where the chapter converts from information into actual skill. Work through each question before moving forward.</p>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff easy"><i class="fas fa-circle"></i> Easy</span>
+              <h5>Q1 — Expand the Abbreviations</h5>
+              <p>Write the full forms of: <strong>HTML, CSS, URL, HTTP</strong>. Don't look them up — try from memory first.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff easy"><i class="fas fa-circle"></i> Easy</span>
+              <h5>Q2 — Write in Your Own Words</h5>
+              <p>In 3-4 sentences, explain what HTML is and what it is NOT. Use no technical jargon — explain it as if to someone who has never heard the term.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff medium"><i class="fas fa-circle"></i> Medium</span>
+              <h5>Q3 — Frontend vs Backend</h5>
+              <p>Open Amazon.com. List 5 elements that belong to the frontend and 3 features that require backend processing. Explain why you categorized each one that way.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff medium"><i class="fas fa-circle"></i> Medium</span>
+              <h5>Q4 — Explain the Three Layers</h5>
+              <p>Using the house OR car analogy (your choice), explain the role of HTML, CSS, and JavaScript in your own words. Extend the analogy with at least one specific example for each.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff medium"><i class="fas fa-circle"></i> Medium</span>
+              <h5>Q5 — Draw the Website Flow</h5>
+              <p>Draw a simple diagram (pen and paper is fine) showing the complete request-response cycle when a user visits a website. Label each step and explain what's happening.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff medium"><i class="fas fa-circle"></i> Medium</span>
+              <h5>Q6 — Browser Research</h5>
+              <p>Pick one browser: Chrome, Firefox, Edge, or Safari. Write a short note covering: who made it, which rendering engine it uses, and one unique feature that makes it distinctive.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff hard"><i class="fas fa-circle"></i> Practical</span>
+              <h5>Q7 — Create Project Structure</h5>
+              <p>Create a folder named <code style="background:rgba(249,115,22,0.1); color:var(--orange-light); padding:1px 7px; border-radius:4px; font-family:'JetBrains Mono',monospace; font-size:0.85em;">Web-Practice</code>. Open it in VS Code. Create a file named <code style="background:rgba(249,115,22,0.1); color:var(--orange-light); padding:1px 7px; border-radius:4px; font-family:'JetBrains Mono',monospace; font-size:0.85em;">index.html</code> inside it.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff hard"><i class="fas fa-circle"></i> Practical</span>
+              <h5>Q8 — Write Your First Page</h5>
+              <p>In your index.html, write a page with: one main heading using &lt;h1&gt;, and two paragraphs using &lt;p&gt;. Open it with Live Server and verify it displays correctly in your browser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- === MINI TASK === -->
+      <div class="mb-5" id="mini-task" data-aos="fade-up">
+        <span class="sec-eyebrow">Mini Task</span>
+        <h2 class="sec-title">About Me Webpage</h2>
+        <div class="orange-rule"></div>
+        <div class="g-card p-4">
+          <div class="d-flex align-items-start gap-3 mb-3">
+            <div style="width:48px;height:48px;min-width:48px;border-radius:12px;background:linear-gradient(135deg,var(--orange),var(--orange-2));display:flex;align-items:center;justify-content:center;font-size:1.4rem;">🧑</div>
+            <div>
+              <h5 style="font-size:1rem; font-weight:800; margin-bottom:4px;">Build a Personal Introduction Page</h5>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Create a new file: <code style="background:rgba(249,115,22,0.1); color:var(--orange-light); padding:2px 8px; border-radius:4px; font-family:'JetBrains Mono',monospace;">about-me.html</code></p>
+            </div>
+          </div>
+          <div style="height:1px; background:var(--border); margin:16px 0;"></div>
+          <div style="font-size:0.85rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.07em; margin-bottom:12px;">Your page must include:</div>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; gap:10px; align-items:flex-start; font-size:0.88rem; color:var(--text-soft);">
+              <i class="fas fa-circle" style="color:var(--orange); font-size:0.4rem; margin-top:8px;"></i>
+              Your name as a main heading
+            </div>
+            <div style="display:flex; gap:10px; align-items:flex-start; font-size:0.88rem; color:var(--text-soft);">
+              <i class="fas fa-circle" style="color:var(--orange); font-size:0.4rem; margin-top:8px;"></i>
+              Your educational background in a paragraph
+            </div>
+            <div style="display:flex; gap:10px; align-items:flex-start; font-size:0.88rem; color:var(--text-soft);">
+              <i class="fas fa-circle" style="color:var(--orange); font-size:0.4rem; margin-top:8px;"></i>
+              Your hobbies in a paragraph
+            </div>
+            <div style="display:flex; gap:10px; align-items:flex-start; font-size:0.88rem; color:var(--text-soft);">
+              <i class="fas fa-circle" style="color:var(--orange); font-size:0.4rem; margin-top:8px;"></i>
+              Your career goal in a paragraph
+            </div>
+            <div style="display:flex; gap:10px; align-items:flex-start; font-size:0.88rem; color:var(--text-soft);">
+              <i class="fas fa-circle" style="color:var(--orange); font-size:0.4rem; margin-top:8px;"></i>
+              Your favorite technology in a paragraph
+            </div>
+          </div>
+          <div style="margin-top:16px; padding:12px 16px; background:rgba(249,115,22,0.06); border-radius:8px; font-size:0.83rem; color:var(--text-muted); border-left:3px solid var(--orange);">
+            <strong style="color:var(--orange-light);">Requirement:</strong> Use at least one &lt;h1&gt; tag and at least two &lt;p&gt; tags. Type everything manually. Open in Live Server and verify it works.
+          </div>
+        </div>
+      </div>
+
+      <!-- === COMPLETION CHECKLIST === -->
+      <div class="mb-5" id="checklist" data-aos="fade-up">
+        <span class="sec-eyebrow">Before You Move On</span>
+        <h2 class="sec-title">Completion Checklist</h2>
+        <div class="orange-rule"></div>
+        <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:20px;">Click each item to check it off. Complete all 10 before proceeding to Chapter 2.</p>
+
+        <div class="g-card p-4">
+          <div id="checklist-progress"><div id="checklist-fill"></div></div>
+          <div id="checklist-count" style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; text-align:right;">0 / 10 completed</div>
+
+          <div id="checklist-items">
+            <div class="checklist-item" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-label">I can explain what HTML is and what it is NOT</div>
+            </div>
+            <div class="checklist-item" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-label">I understand the difference between frontend and backend</div>
+            </div>
+            <div class="checklist-item" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-label">I can explain the roles of HTML, CSS, and JavaScript</div>
+            </div>
+            <div class="checklist-item" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-label">I can describe what happens when a user visits a website</div>
+            </div>
+            <div class="checklist-item" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-label">I know what a browser does and can name 4 popular ones</div>
+            </div>
+            <div class="checklist-item" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-label">I have VS Code installed and Live Server is working</div>
+            </div>
+            <div class="checklist-item" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-label">I created index.html and ran it successfully in a browser</div>
+            </div>
+            <div class="checklist-item" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-label">I completed all 8 practice questions</div>
+            </div>
+            <div class="checklist-item" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-label">I built the About Me mini task page</div>
+            </div>
+            <div class="checklist-item" onclick="toggleCheck(this)">
+              <div class="check-box"></div>
+              <div class="check-label">I reviewed the interview questions and can answer them</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- === QUICK REVISION === -->
+      <div class="mb-5" id="revision" data-aos="fade-up">
+        <span class="sec-eyebrow">Quick Revision</span>
+        <h2 class="sec-title">Chapter 1 — Key Takeaways</h2>
+        <div class="orange-rule"></div>
+        <div class="g-card p-4">
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:18px;">Hover over each point to highlight it. Review these before every practice session.</p>
+          <div>
+            <span class="rev-pill">HTML = HyperText Markup Language</span>
+            <span class="rev-pill">HTML is NOT a programming language</span>
+            <span class="rev-pill">HTML provides structure, not style</span>
+            <span class="rev-pill">Frontend = visible to users</span>
+            <span class="rev-pill">Backend = server-side logic</span>
+            <span class="rev-pill">HTML = Structure</span>
+            <span class="rev-pill">CSS = Presentation</span>
+            <span class="rev-pill">JavaScript = Behavior</span>
+            <span class="rev-pill">Browser reads HTML first</span>
+            <span class="rev-pill">Chrome & Edge use Blink engine</span>
+            <span class="rev-pill">Firefox uses Gecko</span>
+            <span class="rev-pill">Safari uses WebKit</span>
+            <span class="rev-pill">HTML files use .html extension</span>
+            <span class="rev-pill">index.html is the default home file</span>
+            <span class="rev-pill">VS Code + Live Server = dev setup</span>
+            <span class="rev-pill">Always TYPE code, never copy-paste</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- === CHAPTER COMPLETION === -->
+      <div class="g-card completion-zone mb-5" data-aos="zoom-in">
+        <h4 style="font-size:1.2rem; font-weight:800; margin-bottom:8px;">Ready to Mark Chapter 1 Complete?</h4>
+        <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:24px; max-width:440px; margin-left:auto; margin-right:auto;">Only click this after completing the checklist, practice questions, and mini task. Progress is tracked automatically.</p>
+        <button id="btn-complete" onclick="markComplete()">
+          <i class="fas fa-trophy"></i> Mark Chapter 1 as Complete
+        </button>
+        <div id="completion-msg">
+          <div style="background:rgba(34,197,94,0.08); border:1px solid rgba(34,197,94,0.25); border-radius:12px; padding:18px 22px; max-width:440px; margin:0 auto;">
+            <div style="font-size:1.2rem; margin-bottom:8px;">🎉</div>
+            <div style="font-size:0.95rem; font-weight:700; color:var(--green); margin-bottom:6px;">Chapter 1 Complete!</div>
+            <div style="font-size:0.84rem; color:var(--text-muted);">Your progress has been saved. You're ready for Chapter 2 — Basic HTML Structure.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- === NEXT CHAPTER === -->
+      <div id="next-chapter" data-aos="zoom-in">
+        <div class="next-banner">
+          <div class="position-relative">
+            <span class="sec-eyebrow d-block text-center mb-2">What's Next?</span>
+            <h2>Chapter 2 — Basic HTML Structure</h2>
+            <p>You understand the world. Now it's time to learn the language. In Chapter 2, you'll discover the exact anatomy of every HTML document — the skeleton that every webpage on the internet shares.</p>
+            <div class="next-topics">
+              <span class="next-pill">DOCTYPE Declaration</span>
+              <span class="next-pill">&lt;html&gt; Tag</span>
+              <span class="next-pill">&lt;head&gt; & &lt;body&gt;</span>
+              <span class="next-pill">&lt;title&gt; Tag</span>
+              <span class="next-pill">Meta Tags</span>
+              <span class="next-pill">Comments</span>
+              <span class="next-pill">Whitespace Rules</span>
+              <span class="next-pill">Case Insensitivity</span>
+            </div>
+            <a href="../Chapter-2/index.html" class="btn-next-ch">
+              Start Chapter 2 <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="mt-3" style="font-size:0.8rem; color:var(--text-muted);">
+              <i class="fas fa-clock me-1" style="color:var(--orange)"></i> ~50 minutes &nbsp;·&nbsp;
+              <i class="fas fa-code me-1" style="color:var(--orange)"></i> First Real HTML Code
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end col-lg-9 -->
+
+    <!-- ===== RIGHT: TOC SIDEBAR ===== -->
+    <div class="col-lg-3 d-none d-lg-block">
+      <div class="toc">
+        <div class="toc-title">On This Page</div>
+        <a class="toc-link" href="#objectives"><i class="fas fa-bullseye"></i> Learning Objectives</a>
+        <a class="toc-link" href="#concepts"><i class="fas fa-code"></i> What is HTML?</a>
+        <a class="toc-link" href="#frontend-backend"><i class="fas fa-server"></i> Frontend vs Backend</a>
+        <a class="toc-link" href="#three-layers"><i class="fas fa-layer-group"></i> HTML, CSS & JS</a>
+        <a class="toc-link" href="#how-web-works"><i class="fas fa-globe"></i> How Websites Work</a>
+        <a class="toc-link" href="#browsers"><i class="fas fa-window-maximize"></i> Web Browsers</a>
+        <a class="toc-link" href="#vscode"><i class="fas fa-code-branch"></i> VS Code Setup</a>
+        <a class="toc-link" href="#first-file"><i class="fas fa-file-code"></i> First HTML File</a>
+        <a class="toc-link" href="#real-world"><i class="fas fa-earth-asia"></i> Real World Uses</a>
+        <a class="toc-link" href="#mistakes"><i class="fas fa-triangle-exclamation"></i> Common Mistakes</a>
+        <a class="toc-link" href="#interview"><i class="fas fa-briefcase"></i> Interview Questions</a>
+        <a class="toc-link" href="#practice"><i class="fas fa-dumbbell"></i> Practice Set</a>
+        <a class="toc-link" href="#mini-task"><i class="fas fa-hammer"></i> Mini Task</a>
+        <a class="toc-link" href="#checklist"><i class="fas fa-list-check"></i> Checklist</a>
+        <a class="toc-link" href="#revision"><i class="fas fa-rotate"></i> Quick Revision</a>
+        <a class="toc-link" href="#next-chapter"><i class="fas fa-arrow-right"></i> Chapter 2</a>
+
+        <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--border);">
+          <div class="toc-title">Chapter Progress</div>
+          <div style="height:5px; background:rgba(255,255,255,0.06); border-radius:99px; overflow:hidden; margin-bottom:8px;">
+            <div id="sidebar-progress" style="height:100%; width:0%; background:linear-gradient(90deg,var(--orange),var(--green)); transition:width 0.3s; border-radius:99px;"></div>
+          </div>
+          <div id="sidebar-pct" style="font-size:0.75rem; color:var(--text-muted); text-align:right;">0% read</div>
+        </div>
+
+        <div style="margin-top:18px;">
+          <a href="../index.html" style="display:flex; align-items:center; gap:7px; font-size:0.8rem; color:var(--text-muted); text-decoration:none; padding:8px 10px; border-radius:8px; border:1px solid var(--border); transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(249,115,22,0.3)'; this.style.color='var(--orange)'" onmouseout="this.style.borderColor='var(--border)'; this.style.color='var(--text-muted)'">
+            <i class="fas fa-home"></i> Back to Course Home
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end row -->
+</div><!-- end container -->
+
+<!-- ====== CHAPTER NAV BAR ====== -->
+<div class="chapter-nav-bar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a href="../index.html" class="ch-nav-btn">
+      <i class="fas fa-arrow-left"></i> Course Home
+    </a>
+    <div style="font-size:0.8rem; color:var(--text-muted);">Chapter 1 of 8</div>
+    <a href="../Chapter-2/index.html" class="ch-nav-btn next">
+      Chapter 2 <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+      <div>
+        <div class="footer-brand">HTML Mastery <span>with Nilansha</span></div>
+        <div style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">Chapter 1 — Introduction to Web Development</div>
+      </div>
+      <div style="font-size:0.82rem; color:var(--text-muted);">
+        <span style="color:var(--orange)">←</span> <a href="../index.html" style="color:var(--text-muted); text-decoration:none;">Course Home</a>
+        &nbsp;·&nbsp;
+        <a href="../Chapter-2/index.html" style="color:var(--text-muted); text-decoration:none;">Chapter 2</a> <span style="color:var(--orange)">→</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 HTML Mastery with Nilansha. All rights reserved.</div>
+      <div>Let's Learn HTML with <span style="color:var(--orange); font-weight:600;">Nilansha</span> ❤️</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ====== SCRIPTS ====== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
