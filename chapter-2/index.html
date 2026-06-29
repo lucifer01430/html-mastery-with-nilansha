@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chapter 2 – Basic HTML Structure | HTML Mastery with Nilansha. Learn DOCTYPE, html, head, body, title, meta tags, comments, whitespace, and case rules." />
+  <title>Chapter 2 – Basic HTML Structure | HTML Mastery with Nilansha</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+<body>
+
+<div id="reading-bar"></div>
+
+<!-- ====== NAVBAR ====== -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">HTML Mastery <span>with Nilansha</span></a>
+    <div class="d-flex align-items-center gap-2 ms-auto">
+      <span class="chapter-badge d-none d-sm-inline">Chapter 2 of 8</span>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="fas fa-bars" style="color:var(--text)"></i>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-3 align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="#concepts">Concepts</a></li>
+        <li class="nav-item"><a class="nav-link" href="#practice">Practice</a></li>
+        <li class="nav-item"><a class="nav-link" href="#interview">Interview Q</a></li>
+        <li class="nav-item ms-1"><a class="nav-link btn-nav-cta" href="#next-chapter">Chapter 3 &rarr;</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ====== BREADCRUMB ====== -->
+<div class="breadcrumb-bar">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="../index.html"><i class="fas fa-home me-1"></i>Course Home</a></li>
+        <li class="breadcrumb-item"><a href="../Chapter-1/index.html">Chapter 1</a></li>
+        <li class="breadcrumb-item active">Chapter 2 &ndash; Basic HTML Structure</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- ====== HERO ====== -->
+<section class="ch-hero">
+  <div class="hero-grid"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <div class="ch-eyebrow" data-aos="fade-up">
+          <i class="fas fa-sitemap" style="color:var(--orange)"></i>
+          Chapter 2 &nbsp;&middot;&nbsp; Foundation Level
+        </div>
+        <h1 class="ch-title" data-aos="fade-up" data-aos-delay="70">
+          Basic <span class="accent">HTML Structure</span>
+        </h1>
+        <p class="ch-subtitle" data-aos="fade-up" data-aos-delay="140">
+          In Chapter 1 you understood the world HTML lives in. Now it is time to write it. Every webpage on the internet starts with the same foundational skeleton &mdash; this chapter teaches you exactly how to build it.
+        </p>
+        <div class="ch-meta" data-aos="fade-up" data-aos-delay="200">
+          <div class="ch-meta-item"><i class="fas fa-clock"></i> ~50 minutes</div>
+          <div class="ch-meta-item"><i class="fas fa-signal"></i> Absolute Beginner</div>
+          <div class="ch-meta-item"><i class="fas fa-list-check"></i> 8 Practice Questions</div>
+          <div class="ch-meta-item"><i class="fas fa-hammer"></i> 1 Mini Task + Challenge</div>
+        </div>
+      </div>
+      <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
+        <!-- Path card -->
+        <div class="g-card p-3">
+          <div style="font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;">Your Learning Path</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="padding:10px 14px;background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.2);border-radius:9px;display:flex;align-items:center;gap:10px;" id="ch1-status">
+              <i class="fas fa-check-circle" style="color:var(--green)"></i>
+              <div><div style="font-size:.8rem;font-weight:700;color:var(--green);">Chapter 1 &mdash; Completed</div><div style="font-size:.72rem;color:var(--text-muted);">Introduction to Web Development</div></div>
+            </div>
+            <div style="text-align:center;color:var(--orange);font-size:.9rem;"><i class="fas fa-arrow-down"></i></div>
+            <div style="padding:10px 14px;background:rgba(249,115,22,.08);border:1.5px solid rgba(249,115,22,.35);border-radius:9px;display:flex;align-items:center;gap:10px;">
+              <i class="fas fa-circle-dot" style="color:var(--orange)"></i>
+              <div><div style="font-size:.8rem;font-weight:700;color:var(--orange-light);">Chapter 2 &mdash; You Are Here</div><div style="font-size:.72rem;color:var(--text-muted);">Basic HTML Structure</div></div>
+            </div>
+            <div style="text-align:center;color:#334155;font-size:.9rem;"><i class="fas fa-arrow-down"></i></div>
+            <div style="padding:10px 14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:9px;display:flex;align-items:center;gap:10px;opacity:.6;">
+              <i class="fas fa-lock" style="color:var(--text-muted)"></i>
+              <div><div style="font-size:.8rem;font-weight:700;color:var(--text-muted);">Chapter 3 &mdash; Up Next</div><div style="font-size:.72rem;color:var(--text-muted);">Text Formatting &amp; Basic Tags</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MAIN LAYOUT ====== -->
+<div class="container" style="padding-top:64px;padding-bottom:64px;">
+  <div class="row g-5">
+
+    <!-- ===== CONTENT ===== -->
+    <div class="col-lg-9">
+
+      <!-- === LEARNING OBJECTIVES === -->
+      <div class="g-card p-4 mb-5" id="objectives" data-aos="fade-up">
+        <span class="sec-eyebrow">Learning Objectives</span>
+        <h2 class="sec-title" style="font-size:1.5rem;">By the End of This Chapter, You Will:</h2>
+        <div class="orange-rule"></div>
+        <div class="objective-item"><div class="obj-num">01</div><div class="obj-text">Understand the standard structure of every HTML document</div></div>
+        <div class="objective-item"><div class="obj-num">02</div><div class="obj-text">Explain the purpose of the DOCTYPE declaration and what happens without it</div></div>
+        <div class="objective-item"><div class="obj-num">03</div><div class="obj-text">Use the <span class="tag-ref">&lt;html&gt;</span> element correctly with a language attribute</div></div>
+        <div class="objective-item"><div class="obj-num">04</div><div class="obj-text">Differentiate clearly between the <span class="tag-ref">&lt;head&gt;</span> and <span class="tag-ref">&lt;body&gt;</span> sections</div></div>
+        <div class="objective-item"><div class="obj-num">05</div><div class="obj-text">Add a meaningful page title using the <span class="tag-ref">&lt;title&gt;</span> element</div></div>
+        <div class="objective-item"><div class="obj-num">06</div><div class="obj-text">Configure essential meta tags for charset, viewport, and SEO</div></div>
+        <div class="objective-item"><div class="obj-num">07</div><div class="obj-text">Write HTML comments for code organization and readability</div></div>
+        <div class="objective-item"><div class="obj-num">08</div><div class="obj-text">Understand how HTML handles extra whitespace and line breaks</div></div>
+        <div class="objective-item"><div class="obj-num">09</div><div class="obj-text">Apply the lowercase tag convention consistently throughout your code</div></div>
+      </div>
+
+      <!-- ===== CONCEPT 1: DOCUMENT STRUCTURE ===== -->
+      <div id="concepts" class="mb-5" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 1</span>
+        <h2 class="sec-title">HTML Document Structure</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">Every HTML document ever written follows the same fundamental skeleton. This structure is not optional &mdash; it is the required foundation that browsers expect before they render anything on screen.</p>
+
+        <!-- Visual structure diagram -->
+        <div class="g-card p-4 mb-4" data-aos="fade-up">
+          <div style="font-size:.82rem;font-weight:700;color:var(--orange-light);margin-bottom:20px;display:flex;align-items:center;gap:8px;">
+            <i class="fas fa-diagram-project" style="color:var(--orange)"></i> Anatomy of an HTML Document
+          </div>
+          <div class="doc-diagram">
+            <!-- DOCTYPE -->
+            <div class="doc-tag-box doctype">
+              <span class="doc-tag-label">&lt;!DOCTYPE html&gt;</span>
+              <div class="doc-tag-desc">Browser declaration &mdash; tells the browser this is HTML5</div>
+            </div>
+            <!-- html -->
+            <div class="doc-tag-box root" style="margin-top:4px;">
+              <span class="doc-tag-label">&lt;html lang="en"&gt;</span>
+              <div class="doc-tag-desc">Root element &mdash; wraps the entire document</div>
+            </div>
+            <!-- head -->
+            <div class="doc-level">
+              <div class="doc-indent"></div>
+              <div style="flex:1;">
+                <div class="doc-tag-box head">
+                  <span class="doc-tag-label">&lt;head&gt;</span>
+                  <div class="doc-tag-desc">Metadata section &mdash; not visible on the page</div>
+                </div>
+                <div class="doc-level">
+                  <div class="doc-indent" style="border-left:none;"></div>
+                  <div style="flex:1;">
+                    <div class="doc-tag-box meta"><span class="doc-tag-label">&lt;meta charset="UTF-8"&gt;</span><div class="doc-tag-desc">Character encoding</div></div>
+                    <div class="doc-tag-box meta"><span class="doc-tag-label">&lt;meta name="viewport" ... &gt;</span><div class="doc-tag-desc">Mobile responsiveness</div></div>
+                    <div class="doc-tag-box meta"><span class="doc-tag-label">&lt;title&gt;Page Title&lt;/title&gt;</span><div class="doc-tag-desc">Browser tab title &amp; SEO</div></div>
+                  </div>
+                </div>
+                <div class="doc-tag-box head" style="margin-top:0;">&lt;/head&gt;</div>
+              </div>
+            </div>
+            <!-- body -->
+            <div class="doc-level">
+              <div class="doc-indent"></div>
+              <div style="flex:1;">
+                <div class="doc-tag-box body">
+                  <span class="doc-tag-label">&lt;body&gt;</span>
+                  <div class="doc-tag-desc">Content section &mdash; everything users SEE lives here</div>
+                </div>
+                <div class="doc-level">
+                  <div class="doc-indent" style="border-left:none;"></div>
+                  <div style="flex:1;">
+                    <div class="doc-tag-box content"><span class="doc-tag-label">&lt;h1&gt; Headings &lt;/h1&gt;</span><div class="doc-tag-desc">Visible heading</div></div>
+                    <div class="doc-tag-box content"><span class="doc-tag-label">&lt;p&gt; Paragraphs &lt;/p&gt;</span><div class="doc-tag-desc">Visible paragraph</div></div>
+                    <div class="doc-tag-box content"><span class="doc-tag-label">Images, Links, Forms ...</span><div class="doc-tag-desc">All visible content</div></div>
+                  </div>
+                </div>
+                <div class="doc-tag-box body" style="margin-top:0;">&lt;/body&gt;</div>
+              </div>
+            </div>
+            <div class="doc-tag-box root">&lt;/html&gt;</div>
+          </div>
+        </div>
+
+        <!-- Complete basic template -->
+        <div class="mb-4">
+          <div style="font-size:.82rem;font-weight:700;color:var(--orange-light);margin-bottom:12px;"><i class="fas fa-code me-2" style="color:var(--orange)"></i>Basic HTML Document</div>
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div>
+              <span class="code-filename">index.html</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <div class="code-body"><div><span class="c-ln">1</span><span class="c-kw">&lt;!DOCTYPE html&gt;</span></div>
+<div><span class="c-ln">2</span><span class="c-tg">&lt;html&gt;</span></div>
+<div><span class="c-ln">3</span></div>
+<div><span class="c-ln">4</span>&nbsp;&nbsp;<span class="c-tg">&lt;head&gt;</span></div>
+<div><span class="c-ln">5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tg">&lt;title&gt;</span><span class="c-tx">My First Webpage</span><span class="c-tg">&lt;/title&gt;</span></div>
+<div><span class="c-ln">6</span>&nbsp;&nbsp;<span class="c-tg">&lt;/head&gt;</span></div>
+<div><span class="c-ln">7</span></div>
+<div><span class="c-ln">8</span>&nbsp;&nbsp;<span class="c-tg">&lt;body&gt;</span></div>
+<div><span class="c-ln">9</span></div>
+<div><span class="c-ln">10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tg">&lt;h1&gt;</span><span class="c-tx">Welcome to HTML</span><span class="c-tg">&lt;/h1&gt;</span></div>
+<div><span class="c-ln">11</span></div>
+<div><span class="c-ln">12</span>&nbsp;&nbsp;<span class="c-tg">&lt;/body&gt;</span></div>
+<div><span class="c-ln">13</span></div>
+<div><span class="c-ln">14</span><span class="c-tg">&lt;/html&gt;</span></div></div>
+          </div>
+        </div>
+
+        <div class="callout info">
+          <div class="callout-icon"><i class="fas fa-info-circle"></i></div>
+          <div class="callout-content"><strong>Four Building Blocks</strong>Every HTML document is built from four parts: the DOCTYPE declaration, the <code>&lt;html&gt;</code> root element, the <code>&lt;head&gt;</code> metadata section, and the <code>&lt;body&gt;</code> content section. You will use these on every single page you ever build.</div>
+        </div>
+      </div>
+
+      <!-- ===== CONCEPT 2: DOCTYPE ===== -->
+      <div class="mb-5" id="doctype" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 2</span>
+        <h2 class="sec-title">The DOCTYPE Declaration</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">The DOCTYPE declaration is the very first line of every HTML document. It is not a tag &mdash; it is an instruction to the browser telling it which version of HTML the document uses.</p>
+
+        <div class="code-window mb-4">
+          <div class="code-header">
+            <div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div>
+            <span class="code-filename">DOCTYPE syntax</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <div class="code-body">
+<div><span class="c-ln">1</span><span class="c-kw">&lt;!DOCTYPE html&gt;</span></div>
+          </div>
+        </div>
+
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-shield-halved"></i></div>
+              <h5>Standards Mode</h5>
+              <p>When DOCTYPE is present, browsers render the page in standards mode &mdash; following the HTML specification exactly as intended.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-bug"></i></div>
+              <h5>Quirks Mode (Avoid)</h5>
+              <p>Without DOCTYPE, browsers fall back to Quirks Mode &mdash; a legacy compatibility mode with inconsistent, unpredictable rendering behaviour.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-1"></i></div>
+              <h5>Always First</h5>
+              <p>DOCTYPE must appear as the very first line of the document. Nothing &mdash; not even a blank line &mdash; should appear before it.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-code-branch"></i></div>
+              <h5>HTML5 Simplified</h5>
+              <p>Older HTML versions (4.01, XHTML) required long DOCTYPE strings. HTML5 simplified it to just <span class="tag-ref">&lt;!DOCTYPE html&gt;</span>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout danger">
+          <div class="callout-icon"><i class="fas fa-triangle-exclamation"></i></div>
+          <div class="callout-content"><strong>Never Skip the DOCTYPE</strong>Omitting the DOCTYPE causes browsers to switch to Quirks Mode. Your layout, spacing, and rendering may break in unexpected ways that are very difficult to debug. Always include it as your very first line.</div>
+        </div>
+      </div>
+
+      <!-- ===== CONCEPT 3: HTML ELEMENT ===== -->
+      <div class="mb-5" id="html-element" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 3</span>
+        <h2 class="sec-title">The &lt;html&gt; Element</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">The <span class="tag-ref">&lt;html&gt;</span> element is the root element of every HTML document. Think of it as the outer container that holds absolutely everything else &mdash; the <span class="tag-ref">&lt;head&gt;</span>, the <span class="tag-ref">&lt;body&gt;</span>, and every element inside them.</p>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6">
+            <div class="code-window">
+              <div class="code-header">
+                <div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div>
+                <span class="code-filename">Without lang attribute</span>
+              </div>
+              <div class="code-body">
+<div><span class="c-ln">1</span><span class="c-tg">&lt;html&gt;</span></div>
+<div><span class="c-ln">2</span>&nbsp;&nbsp;<span class="c-cm">&lt;!-- content --&gt;</span></div>
+<div><span class="c-ln">3</span><span class="c-tg">&lt;/html&gt;</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="code-window" style="border-color:rgba(34,197,94,.25);">
+              <div class="code-header" style="background:#0d1117;">
+                <div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div>
+                <span class="code-filename" style="color:var(--green);">With lang attribute (Best Practice)</span>
+              </div>
+              <div class="code-body">
+<div><span class="c-ln">1</span><span class="c-tg">&lt;html</span> <span class="c-at">lang</span>=<span class="c-st">"en"</span><span class="c-tg">&gt;</span></div>
+<div><span class="c-ln">2</span>&nbsp;&nbsp;<span class="c-cm">&lt;!-- content --&gt;</span></div>
+<div><span class="c-ln">3</span><span class="c-tg">&lt;/html&gt;</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="g-card p-4 mb-4">
+          <div style="font-size:.82rem;font-weight:700;color:var(--orange-light);margin-bottom:16px;"><i class="fas fa-earth-asia me-2" style="color:var(--orange)"></i>Why the <code style="font-family:'JetBrains Mono',monospace;font-size:.85em;">lang</code> Attribute Matters</div>
+          <div class="row g-3">
+            <div class="col-sm-4">
+              <div style="text-align:center;padding:18px 12px;background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.12);border-radius:10px;">
+                <i class="fas fa-universal-access" style="color:var(--orange);font-size:1.4rem;margin-bottom:10px;display:block;"></i>
+                <div style="font-size:.85rem;font-weight:700;margin-bottom:4px;">Accessibility</div>
+                <div style="font-size:.75rem;color:var(--text-muted);">Screen readers use it to select the correct pronunciation engine</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div style="text-align:center;padding:18px 12px;background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.12);border-radius:10px;">
+                <i class="fas fa-search" style="color:var(--orange);font-size:1.4rem;margin-bottom:10px;display:block;"></i>
+                <div style="font-size:.85rem;font-weight:700;margin-bottom:4px;">SEO</div>
+                <div style="font-size:.75rem;color:var(--text-muted);">Search engines serve your page to the correct regional audience</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div style="text-align:center;padding:18px 12px;background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.12);border-radius:10px;">
+                <i class="fas fa-globe" style="color:var(--orange);font-size:1.4rem;margin-bottom:10px;display:block;"></i>
+                <div style="font-size:.85rem;font-weight:700;margin-bottom:4px;">Translation</div>
+                <div style="font-size:.75rem;color:var(--text-muted);">Browser translation tools detect source language automatically</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CONCEPT 4: HEAD ===== -->
+      <div class="mb-5" id="head-section" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 4</span>
+        <h2 class="sec-title">The &lt;head&gt; Section</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">The <span class="tag-ref">&lt;head&gt;</span> section is the control room of your webpage. It contains metadata &mdash; information about the page that the browser uses but does not display to the user directly.</p>
+
+        <div class="g-card mb-4" style="overflow:hidden;">
+          <div style="padding:14px 22px;background:rgba(96,165,250,.07);border-bottom:1px solid rgba(96,165,250,.15);">
+            <span style="font-size:.82rem;font-weight:700;color:var(--blue);"><i class="fas fa-gear me-2"></i>What Lives Inside &lt;head&gt;</span>
+          </div>
+          <div class="row g-0">
+            <div class="col-sm-6" style="padding:18px 22px;border-right:1px solid rgba(255,255,255,.04);">
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <div style="display:flex;gap:10px;align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green);margin-top:3px;flex-shrink:0;"></i>
+                  <div style="font-size:.86rem;color:var(--text-soft);"><span style="font-weight:700;color:var(--text);">&lt;title&gt;</span> &mdash; Browser tab title</div>
+                </div>
+                <div style="display:flex;gap:10px;align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green);margin-top:3px;flex-shrink:0;"></i>
+                  <div style="font-size:.86rem;color:var(--text-soft);"><span style="font-weight:700;color:var(--text);">&lt;meta&gt;</span> &mdash; Charset, viewport, description</div>
+                </div>
+                <div style="display:flex;gap:10px;align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green);margin-top:3px;flex-shrink:0;"></i>
+                  <div style="font-size:.86rem;color:var(--text-soft);"><span style="font-weight:700;color:var(--text);">&lt;link&gt;</span> &mdash; Stylesheets, favicons</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6" style="padding:18px 22px;">
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <div style="display:flex;gap:10px;align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green);margin-top:3px;flex-shrink:0;"></i>
+                  <div style="font-size:.86rem;color:var(--text-soft);"><span style="font-weight:700;color:var(--text);">&lt;style&gt;</span> &mdash; Internal CSS styles</div>
+                </div>
+                <div style="display:flex;gap:10px;align-items:flex-start;">
+                  <i class="fas fa-check-circle" style="color:var(--green);margin-top:3px;flex-shrink:0;"></i>
+                  <div style="font-size:.86rem;color:var(--text-soft);"><span style="font-weight:700;color:var(--text);">&lt;script&gt;</span> &mdash; JavaScript references</div>
+                </div>
+                <div style="display:flex;gap:10px;align-items:flex-start;">
+                  <i class="fas fa-times-circle" style="color:var(--red);margin-top:3px;flex-shrink:0;"></i>
+                  <div style="font-size:.86rem;color:var(--text-muted);">Headings, paragraphs, images &mdash; these belong in <code style="color:var(--green);font-family:'JetBrains Mono',monospace;font-size:.82em;">&lt;body&gt;</code></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout warn">
+          <div class="callout-icon"><i class="fas fa-triangle-exclamation"></i></div>
+          <div class="callout-content"><strong>A Very Common Mistake</strong>Never place visible content like headings or paragraphs inside the <code>&lt;head&gt;</code>. That content belongs in <code>&lt;body&gt;</code>. The head is for metadata only.</div>
+        </div>
+      </div>
+
+      <!-- ===== CONCEPT 5: BODY ===== -->
+      <div class="mb-5" id="body-section" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 5</span>
+        <h2 class="sec-title">The &lt;body&gt; Section</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">The <span class="tag-ref">&lt;body&gt;</span> section is where everything a user actually sees is written. If it appears on the screen &mdash; headings, text, images, buttons, tables, forms &mdash; it belongs inside body.</p>
+
+        <div class="code-window mb-4">
+          <div class="code-header">
+            <div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div>
+            <span class="code-filename">Body section example</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <div class="code-body">
+<div><span class="c-ln">1</span><span class="c-tg">&lt;body&gt;</span></div>
+<div><span class="c-ln">2</span></div>
+<div><span class="c-ln">3</span>&nbsp;&nbsp;<span class="c-tg">&lt;h1&gt;</span><span class="c-tx">Hello World</span><span class="c-tg">&lt;/h1&gt;</span></div>
+<div><span class="c-ln">4</span></div>
+<div><span class="c-ln">5</span>&nbsp;&nbsp;<span class="c-tg">&lt;p&gt;</span><span class="c-tx">This is my first webpage.</span><span class="c-tg">&lt;/p&gt;</span></div>
+<div><span class="c-ln">6</span></div>
+<div><span class="c-ln">7</span><span class="c-tg">&lt;/body&gt;</span></div>
+          </div>
+        </div>
+
+        <div class="analogy-strip" data-aos="fade-up">
+          <div class="analogy-icon-wrap"><i class="fas fa-window-restore" style="color:var(--green);"></i></div>
+          <div>
+            <h5>Head vs Body &mdash; Think of a Document</h5>
+            <p>The <strong style="color:var(--blue);">&lt;head&gt;</strong> is like the properties panel of a document &mdash; title, author, settings &mdash; information about the document that you configure but do not see in the printed output. The <strong style="color:var(--green);">&lt;body&gt;</strong> is the actual printed page &mdash; every word, image, table, and heading a reader sees. One is metadata. One is content. Never confuse which belongs where.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CONCEPT 6: TITLE ===== -->
+      <div class="mb-5" id="title-tag" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 6</span>
+        <h2 class="sec-title">The &lt;title&gt; Element</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">The <span class="tag-ref">&lt;title&gt;</span> element defines the text shown on the browser tab. It is also the first thing search engines display in search results. A meaningful title matters more than beginners often realise.</p>
+
+        <div class="code-window mb-4">
+          <div class="code-header">
+            <div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div>
+            <span class="code-filename">title element</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <div class="code-body">
+<div><span class="c-ln">1</span><span class="c-tg">&lt;title&gt;</span><span class="c-tx">HTML Mastery</span><span class="c-tg">&lt;/title&gt;</span></div>
+          </div>
+        </div>
+
+        <div class="compare-2col mb-4">
+          <div class="compare-bad">
+            <div class="compare-header"><i class="fas fa-times"></i> Poor Title</div>
+            <div class="compare-body"><span class="c-tg">&lt;title&gt;</span><span class="c-tx">Home</span><span class="c-tg">&lt;/title&gt;</span></div>
+          </div>
+          <div class="compare-good">
+            <div class="compare-header"><i class="fas fa-check"></i> Good Title</div>
+            <div class="compare-body"><span class="c-tg">&lt;title&gt;</span><span class="c-tx">HTML Mastery | Chapter 2</span><span class="c-tg">&lt;/title&gt;</span></div>
+          </div>
+        </div>
+
+        <div class="g-card p-4">
+          <div style="font-size:.82rem;font-weight:700;color:var(--orange-light);margin-bottom:14px;"><i class="fas fa-star me-2" style="color:var(--orange)"></i>Why a Good Title Matters</div>
+          <div class="row g-3">
+            <div class="col-sm-4"><div style="display:flex;gap:10px;align-items:flex-start;"><i class="fas fa-user" style="color:var(--orange);margin-top:3px;"></i><div style="font-size:.85rem;color:var(--text-soft);"><strong>User Experience</strong> &mdash; Users with many tabs open need to identify your page instantly.</div></div></div>
+            <div class="col-sm-4"><div style="display:flex;gap:10px;align-items:flex-start;"><i class="fas fa-search" style="color:var(--orange);margin-top:3px;"></i><div style="font-size:.85rem;color:var(--text-soft);"><strong>SEO</strong> &mdash; Google displays the title as the clickable link in search results.</div></div></div>
+            <div class="col-sm-4"><div style="display:flex;gap:10px;align-items:flex-start;"><i class="fas fa-bookmark" style="color:var(--orange);margin-top:3px;"></i><div style="font-size:.85rem;color:var(--text-soft);"><strong>Bookmarks</strong> &mdash; When saved to favourites, the title becomes the bookmark name.</div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CONCEPT 7: META TAGS ===== -->
+      <div class="mb-5" id="meta-tags" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 7</span>
+        <h2 class="sec-title">Meta Tags</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">Meta tags are self-closing elements placed inside <span class="tag-ref">&lt;head&gt;</span> that provide additional information about the webpage. They affect encoding, responsiveness, and search engine behaviour.</p>
+
+        <!-- charset -->
+        <div class="g-card p-4 mb-3">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:36px;height:36px;border-radius:8px;background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.25);display:flex;align-items:center;justify-content:center;"><i class="fas fa-font" style="color:var(--purple);"></i></div>
+            <h5 style="margin:0;font-size:1rem;font-weight:700;">Character Encoding</h5>
+          </div>
+          <div class="code-window mb-3">
+            <div class="code-header"><div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div><span class="code-filename">meta charset</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+            <div class="code-body"><div><span class="c-ln">1</span><span class="c-tg">&lt;meta</span> <span class="c-at">charset</span>=<span class="c-st">"UTF-8"</span><span class="c-tg">&gt;</span></div></div>
+          </div>
+          <p style="font-size:.86rem;color:var(--text-muted);margin:0;line-height:1.75;">UTF-8 is the universal character encoding standard. It ensures that special characters, foreign language letters, and symbols display correctly in all browsers across all operating systems.</p>
+        </div>
+
+        <!-- viewport -->
+        <div class="g-card p-4 mb-3">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:36px;height:36px;border-radius:8px;background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.25);display:flex;align-items:center;justify-content:center;"><i class="fas fa-mobile-screen-button" style="color:var(--blue);"></i></div>
+            <h5 style="margin:0;font-size:1rem;font-weight:700;">Responsive Design (Viewport)</h5>
+          </div>
+          <div class="code-window mb-3">
+            <div class="code-header"><div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div><span class="code-filename">meta viewport</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+            <div class="code-body"><div><span class="c-ln">1</span><span class="c-tg">&lt;meta</span> <span class="c-at">name</span>=<span class="c-st">"viewport"</span> <span class="c-at">content</span>=<span class="c-st">"width=device-width, initial-scale=1.0"</span><span class="c-tg">&gt;</span></div></div>
+          </div>
+          <p style="font-size:.86rem;color:var(--text-muted);margin:0;line-height:1.75;">This meta tag tells mobile browsers to set the viewport width equal to the device screen width and display the page at a 1:1 scale. Without it, mobile browsers zoom out and show a tiny, unreadable desktop layout.</p>
+        </div>
+
+        <!-- description -->
+        <div class="g-card p-4 mb-4">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:36px;height:36px;border-radius:8px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.25);display:flex;align-items:center;justify-content:center;"><i class="fas fa-magnifying-glass" style="color:var(--green);"></i></div>
+            <h5 style="margin:0;font-size:1rem;font-weight:700;">Meta Description (SEO)</h5>
+          </div>
+          <div class="code-window mb-3">
+            <div class="code-header"><div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div><span class="code-filename">meta description</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+            <div class="code-body"><div><span class="c-ln">1</span><span class="c-tg">&lt;meta</span> <span class="c-at">name</span>=<span class="c-st">"description"</span> <span class="c-at">content</span>=<span class="c-st">"Learn HTML from scratch."</span><span class="c-tg">&gt;</span></div></div>
+          </div>
+          <p style="font-size:.86rem;color:var(--text-muted);margin:0;line-height:1.75;">The meta description appears as the summary text beneath your page title in Google search results. A well-written description improves click-through rates significantly.</p>
+        </div>
+
+        <div class="callout tip">
+          <div class="callout-icon"><i class="fas fa-lightbulb"></i></div>
+          <div class="callout-content"><strong>Always Include These Three</strong>For every HTML page you build, include charset, viewport, and a descriptive title as a minimum. These three lines alone make your page encoded correctly, mobile-friendly, and search-engine visible.</div>
+        </div>
+      </div>
+
+      <!-- ===== CONCEPT 8: COMMENTS ===== -->
+      <div class="mb-5" id="comments" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 8</span>
+        <h2 class="sec-title">HTML Comments</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">HTML comments are notes written inside your code that the browser completely ignores. They are visible only to developers reading the source code. Every professional developer uses them.</p>
+
+        <div class="code-window mb-4">
+          <div class="code-header">
+            <div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div>
+            <span class="code-filename">Comment syntax</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <div class="code-body">
+<div><span class="c-ln">1</span><span class="c-cm">&lt;!-- This is an HTML comment --&gt;</span></div>
+<div><span class="c-ln">2</span></div>
+<div><span class="c-ln">3</span><span class="c-cm">&lt;!-- ====== NAVIGATION SECTION ====== --&gt;</span></div>
+<div><span class="c-ln">4</span><span class="c-tg">&lt;nav&gt;</span><span class="c-tg">&lt;/nav&gt;</span></div>
+<div><span class="c-ln">5</span></div>
+<div><span class="c-ln">6</span><span class="c-cm">&lt;!-- This heading will be replaced later --&gt;</span></div>
+<div><span class="c-ln">7</span><span class="c-tg">&lt;h1&gt;</span><span class="c-tx">Placeholder Title</span><span class="c-tg">&lt;/h1&gt;</span></div>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-3">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-comment-dots"></i></div>
+              <h5>Explain Code</h5>
+              <p>Leave notes for yourself and teammates explaining what a section does.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-folder-open"></i></div>
+              <h5>Organise Sections</h5>
+              <p>Use comments as visual dividers to separate header, nav, main, and footer areas.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-user-group"></i></div>
+              <h5>Team Collaboration</h5>
+              <p>Help other developers understand your intent when working on shared projects.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="g-card concept-card">
+              <div class="concept-icon"><i class="fas fa-eye-slash"></i></div>
+              <h5>Invisible Output</h5>
+              <p>Comments never appear on the rendered webpage. They are for developers only.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CONCEPT 9: WHITESPACE ===== -->
+      <div class="mb-5" id="whitespace" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 9</span>
+        <h2 class="sec-title">Whitespace in HTML</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">HTML collapses all consecutive whitespace &mdash; spaces, tabs, and line breaks &mdash; into a single space when rendering output. This behaviour surprises many beginners. Understanding it prevents frustrating layout bugs.</p>
+
+        <div class="compare-2col mb-4">
+          <div>
+            <div style="font-size:.78rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px;">Code Written</div>
+            <div class="code-window">
+              <div class="code-body" style="font-size:.78rem;">
+<div><span class="c-ln">1</span><span class="c-tg">&lt;p&gt;</span><span class="c-tx">Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World</span><span class="c-tg">&lt;/p&gt;</span></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:.78rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px;">Browser Output</div>
+            <div style="background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.2);border-radius:var(--radius);padding:14px 18px;font-size:.88rem;color:var(--text-soft);">Hello World</div>
+          </div>
+        </div>
+
+        <div class="g-card p-4 mb-4">
+          <div style="font-size:.82rem;font-weight:700;color:var(--orange-light);margin-bottom:14px;"><i class="fas fa-code me-2" style="color:var(--orange)"></i>Extended Whitespace Example</div>
+          <div class="code-window mb-3">
+            <div class="code-header"><div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div><span class="code-filename">whitespace-demo.html</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+            <div class="code-body">
+<div><span class="c-ln">1</span><span class="c-tg">&lt;p&gt;</span></div>
+<div><span class="c-ln">2</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tx">This text</span></div>
+<div><span class="c-ln">3</span></div>
+<div><span class="c-ln">4</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tx">spans multiple</span></div>
+<div><span class="c-ln">5</span></div>
+<div><span class="c-ln">6</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tx">lines in the code.</span></div>
+<div><span class="c-ln">7</span><span class="c-tg">&lt;/p&gt;</span></div>
+            </div>
+          </div>
+          <div style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.15);border-radius:8px;padding:12px 16px;font-size:.85rem;color:var(--text-soft);">
+            <div style="font-size:.75rem;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;">Browser renders this as:</div>
+            This text spans multiple lines in the code.
+          </div>
+        </div>
+
+        <div class="callout info">
+          <div class="callout-icon"><i class="fas fa-info-circle"></i></div>
+          <div class="callout-content"><strong>Whitespace is for Developers, Not the Browser</strong>You can use as many spaces, tabs, and blank lines as you like in your HTML source code. This helps you write clean, readable code. The browser collapses it all anyway, so indentation costs you nothing in terms of output.</div>
+        </div>
+      </div>
+
+      <!-- ===== CONCEPT 10: CASE INSENSITIVITY ===== -->
+      <div class="mb-5" id="case" data-aos="fade-up">
+        <span class="sec-eyebrow">Section 10</span>
+        <h2 class="sec-title">HTML Case Insensitivity</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">HTML tags are not case-sensitive. <span class="tag-ref">&lt;h1&gt;</span>, <span class="tag-ref">&lt;H1&gt;</span>, and <span class="tag-ref">&lt;H1&gt;</span> are all treated identically by the browser. However, one convention is universally adopted for good reason.</p>
+
+        <div class="compare-2col mb-4">
+          <div class="compare-bad">
+            <div class="compare-header"><i class="fas fa-times"></i> Avoid Uppercase</div>
+            <div class="compare-body">
+              <div><span class="c-tg">&lt;HTML&gt;</span></div>
+              <div><span class="c-tg">&lt;HEAD&gt;</span></div>
+              <div>&nbsp;&nbsp;<span class="c-tg">&lt;TITLE&gt;</span><span class="c-tx">My Page</span><span class="c-tg">&lt;/TITLE&gt;</span></div>
+              <div><span class="c-tg">&lt;/HEAD&gt;</span></div>
+              <div><span class="c-tg">&lt;BODY&gt;</span></div>
+              <div>&nbsp;&nbsp;<span class="c-tg">&lt;H1&gt;</span><span class="c-tx">Hello</span><span class="c-tg">&lt;/H1&gt;</span></div>
+              <div><span class="c-tg">&lt;/BODY&gt;</span></div>
+              <div><span class="c-tg">&lt;/HTML&gt;</span></div>
+            </div>
+          </div>
+          <div class="compare-good">
+            <div class="compare-header"><i class="fas fa-check"></i> Always Lowercase</div>
+            <div class="compare-body">
+              <div><span class="c-tg">&lt;html&gt;</span></div>
+              <div><span class="c-tg">&lt;head&gt;</span></div>
+              <div>&nbsp;&nbsp;<span class="c-tg">&lt;title&gt;</span><span class="c-tx">My Page</span><span class="c-tg">&lt;/title&gt;</span></div>
+              <div><span class="c-tg">&lt;/head&gt;</span></div>
+              <div><span class="c-tg">&lt;body&gt;</span></div>
+              <div>&nbsp;&nbsp;<span class="c-tg">&lt;h1&gt;</span><span class="c-tx">Hello</span><span class="c-tg">&lt;/h1&gt;</span></div>
+              <div><span class="c-tg">&lt;/body&gt;</span></div>
+              <div><span class="c-tg">&lt;/html&gt;</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout tip">
+          <div class="callout-icon"><i class="fas fa-lightbulb"></i></div>
+          <div class="callout-content"><strong>Lowercase Is the Universal Standard</strong>The W3C (the organisation that writes the HTML specification) recommends lowercase. Modern frameworks, CSS preprocessors, validators, and team style guides all expect lowercase. Make it a habit from day one and you will never need to fix it later.</div>
+        </div>
+      </div>
+
+      <!-- ===== COMPLETE TEMPLATE ===== -->
+      <div class="mb-5" id="template" data-aos="fade-up">
+        <span class="sec-eyebrow">Full Template</span>
+        <h2 class="sec-title">The Complete HTML Template</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">This is the professional-grade starting template used by developers for every new HTML project. Memorise it. Type it from memory. It should become second nature.</p>
+
+        <div class="code-window mb-4">
+          <div class="code-header">
+            <div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div>
+            <span class="code-filename">Complete HTML Template &mdash; template.html</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <div class="code-body">
+<div><span class="c-ln">1</span><span class="c-kw">&lt;!DOCTYPE html&gt;</span></div>
+<div><span class="c-ln">2</span><span class="c-tg">&lt;html</span> <span class="c-at">lang</span>=<span class="c-st">"en"</span><span class="c-tg">&gt;</span></div>
+<div><span class="c-ln">3</span></div>
+<div><span class="c-ln">4</span><span class="c-tg">&lt;head&gt;</span></div>
+<div><span class="c-ln">5</span></div>
+<div><span class="c-ln">6</span>&nbsp;&nbsp;<span class="c-tg">&lt;meta</span> <span class="c-at">charset</span>=<span class="c-st">"UTF-8"</span><span class="c-tg">&gt;</span></div>
+<div><span class="c-ln">7</span></div>
+<div><span class="c-ln">8</span>&nbsp;&nbsp;<span class="c-tg">&lt;meta</span> <span class="c-at">name</span>=<span class="c-st">"viewport"</span></div>
+<div><span class="c-ln">9</span>&nbsp;&nbsp;<span class="c-at">content</span>=<span class="c-st">"width=device-width, initial-scale=1.0"</span><span class="c-tg">&gt;</span></div>
+<div><span class="c-ln">10</span></div>
+<div><span class="c-ln">11</span>&nbsp;&nbsp;<span class="c-tg">&lt;title&gt;</span><span class="c-tx">My First HTML Page</span><span class="c-tg">&lt;/title&gt;</span></div>
+<div><span class="c-ln">12</span></div>
+<div><span class="c-ln">13</span><span class="c-tg">&lt;/head&gt;</span></div>
+<div><span class="c-ln">14</span></div>
+<div><span class="c-ln">15</span><span class="c-tg">&lt;body&gt;</span></div>
+<div><span class="c-ln">16</span></div>
+<div><span class="c-ln">17</span>&nbsp;&nbsp;<span class="c-tg">&lt;h1&gt;</span><span class="c-tx">Welcome to HTML Mastery</span><span class="c-tg">&lt;/h1&gt;</span></div>
+<div><span class="c-ln">18</span></div>
+<div><span class="c-ln">19</span>&nbsp;&nbsp;<span class="c-tg">&lt;p&gt;</span><span class="c-tx">This is my first HTML document.</span><span class="c-tg">&lt;/p&gt;</span></div>
+<div><span class="c-ln">20</span></div>
+<div><span class="c-ln">21</span><span class="c-tg">&lt;/body&gt;</span></div>
+<div><span class="c-ln">22</span></div>
+<div><span class="c-ln">23</span><span class="c-tg">&lt;/html&gt;</span></div>
+          </div>
+        </div>
+
+        <div class="callout tip">
+          <div class="callout-icon"><i class="fas fa-lightbulb"></i></div>
+          <div class="callout-content"><strong>VS Code Shortcut</strong>In VS Code, create a new <code>.html</code> file, type <code>!</code> and press <kbd style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:1px 6px;border-radius:4px;font-family:monospace;font-size:.85em;">Tab</kbd>. Emmet will automatically expand this into a complete HTML5 template. You still need to understand every line it generates &mdash; which you now do.</div>
+        </div>
+      </div>
+
+      <!-- ===== REAL WORLD ===== -->
+      <div class="mb-5" id="real-world" data-aos="fade-up">
+        <span class="sec-eyebrow">Real World</span>
+        <h2 class="sec-title">Where This Structure is Used</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">The structure you learned in this chapter is not just for practice files. It is the starting point for every professional website in existence.</p>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-4"><div class="g-card concept-card"><div class="concept-icon"><i class="fas fa-user-circle"></i></div><h5>Personal Websites</h5><p>Every portfolio, resume page, and personal blog starts with this exact structure.</p></div></div>
+          <div class="col-sm-6 col-lg-4"><div class="g-card concept-card"><div class="concept-icon"><i class="fas fa-building"></i></div><h5>Business Websites</h5><p>Company home pages, landing pages, and service pages all share this same foundation.</p></div></div>
+          <div class="col-sm-6 col-lg-4"><div class="g-card concept-card"><div class="concept-icon"><i class="fas fa-graduation-cap"></i></div><h5>Educational Platforms</h5><p>Online courses, documentation sites, and learning portals all begin with DOCTYPE.</p></div></div>
+          <div class="col-sm-6 col-lg-4"><div class="g-card concept-card"><div class="concept-icon"><i class="fas fa-cart-shopping"></i></div><h5>E-Commerce</h5><p>Every product page on Amazon, Flipkart, and Shopify starts from this template.</p></div></div>
+          <div class="col-sm-6 col-lg-4"><div class="g-card concept-card"><div class="concept-icon"><i class="fas fa-newspaper"></i></div><h5>News Portals</h5><p>News articles, editorial content, and media sites all use proper HTML document structure.</p></div></div>
+          <div class="col-sm-6 col-lg-4"><div class="g-card concept-card"><div class="concept-icon"><i class="fas fa-id-card"></i></div><h5>Portfolio Websites</h5><p>Developer portfolios use this structure as the base before any framework is added.</p></div></div>
+        </div>
+      </div>
+
+      <!-- ===== MISTAKES ===== -->
+      <div class="mb-5" id="mistakes" data-aos="fade-up">
+        <span class="sec-eyebrow">Watch Out</span>
+        <h2 class="sec-title">Common Beginner Mistakes</h2>
+        <div class="orange-rule"></div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="g-card mistake-card">
+              <h6><i class="fas fa-triangle-exclamation me-2" style="color:var(--red)"></i>Forgetting DOCTYPE</h6>
+              <div class="mistake-wrong"><i class="fas fa-times m-icon"></i><span>Starting the file with <span class="tag-ref">&lt;html&gt;</span> without any DOCTYPE declaration on line 1.</span></div>
+              <div class="mistake-right"><i class="fas fa-check m-icon"></i><span>Always write <span class="tag-ref">&lt;!DOCTYPE html&gt;</span> as the very first line, before anything else.</span></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card mistake-card">
+              <h6><i class="fas fa-triangle-exclamation me-2" style="color:var(--red)"></i>Content Inside Head</h6>
+              <div class="mistake-wrong"><i class="fas fa-times m-icon"></i><span>Placing headings, paragraphs, or images inside the <span class="tag-ref">&lt;head&gt;</span> section expecting them to appear on screen.</span></div>
+              <div class="mistake-right"><i class="fas fa-check m-icon"></i><span>All visible content belongs exclusively inside <span class="tag-ref">&lt;body&gt;</span>. The head is for metadata only.</span></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card mistake-card">
+              <h6><i class="fas fa-triangle-exclamation me-2" style="color:var(--red)"></i>Metadata in Body</h6>
+              <div class="mistake-wrong"><i class="fas fa-times m-icon"></i><span>Placing <span class="tag-ref">&lt;meta&gt;</span> tags, the <span class="tag-ref">&lt;title&gt;</span>, or <span class="tag-ref">&lt;link&gt;</span> elements inside <span class="tag-ref">&lt;body&gt;</span>.</span></div>
+              <div class="mistake-right"><i class="fas fa-check m-icon"></i><span>All meta tags, title, and stylesheet links belong in the <span class="tag-ref">&lt;head&gt;</span> section, never in body.</span></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card mistake-card">
+              <h6><i class="fas fa-triangle-exclamation me-2" style="color:var(--red)"></i>Inconsistent Tag Case</h6>
+              <div class="mistake-wrong"><i class="fas fa-times m-icon"></i><span>Mixing uppercase and lowercase tags inconsistently: <span class="tag-ref">&lt;HEAD&gt;</span> here, <span class="tag-ref">&lt;body&gt;</span> there.</span></div>
+              <div class="mistake-right"><i class="fas fa-check m-icon"></i><span>Write all HTML tags in lowercase consistently. This is the industry convention and makes code readable.</span></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card mistake-card">
+              <h6><i class="fas fa-triangle-exclamation me-2" style="color:var(--red)"></i>Missing lang Attribute</h6>
+              <div class="mistake-wrong"><i class="fas fa-times m-icon"></i><span>Writing <span class="tag-ref">&lt;html&gt;</span> without a <code style="font-family:'JetBrains Mono',monospace;font-size:.85em;">lang</code> attribute on the root element.</span></div>
+              <div class="mistake-right"><i class="fas fa-check m-icon"></i><span>Always add <span class="tag-ref">lang="en"</span> (or your document language) to the <span class="tag-ref">&lt;html&gt;</span> tag for accessibility and SEO.</span></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card mistake-card">
+              <h6><i class="fas fa-triangle-exclamation me-2" style="color:var(--red)"></i>Vague Page Titles</h6>
+              <div class="mistake-wrong"><i class="fas fa-times m-icon"></i><span>Using generic titles like <span class="tag-ref">&lt;title&gt;Home&lt;/title&gt;</span> or <span class="tag-ref">&lt;title&gt;Page&lt;/title&gt;</span> that give no meaningful information.</span></div>
+              <div class="mistake-right"><i class="fas fa-check m-icon"></i><span>Write descriptive, specific titles that tell users and search engines exactly what the page is about.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== INTERVIEW QUESTIONS ===== -->
+      <div class="mb-5" id="interview" data-aos="fade-up">
+        <span class="sec-eyebrow">Interview Prep</span>
+        <h2 class="sec-title">Interview Questions</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">These questions are asked in college exams and real developer interviews. Think through your answer before expanding each one.</p>
+
+        <div class="iq-wrap" id="iqAccordion">
+
+          <div class="iq-item">
+            <button class="iq-btn" data-bs-toggle="collapse" data-bs-target="#iq1" aria-expanded="false" aria-controls="iq1">
+              <div class="iq-num">01</div>
+              <div class="iq-q-text">What is the purpose of the DOCTYPE declaration?</div>
+              <i class="fas fa-chevron-down iq-chevron"></i>
+            </button>
+            <div id="iq1" class="collapse" data-bs-parent="#iqAccordion">
+              <div class="iq-ans">The DOCTYPE declaration tells the browser which version of HTML the document uses. For HTML5 it is simply <code>&lt;!DOCTYPE html&gt;</code>. Without it the browser enters Quirks Mode, a legacy compatibility mode with inconsistent rendering behaviour. It must always appear as the very first line of the document.</div>
+            </div>
+          </div>
+
+          <div class="iq-item">
+            <button class="iq-btn" data-bs-toggle="collapse" data-bs-target="#iq2" aria-expanded="false" aria-controls="iq2">
+              <div class="iq-num">02</div>
+              <div class="iq-q-text">What is the root element of an HTML document?</div>
+              <i class="fas fa-chevron-down iq-chevron"></i>
+            </button>
+            <div id="iq2" class="collapse" data-bs-parent="#iqAccordion">
+              <div class="iq-ans">The <code>&lt;html&gt;</code> element is the root element. It wraps the entire HTML document &mdash; every other element, including <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>, exists inside it. It should always include a <code>lang</code> attribute specifying the document's language.</div>
+            </div>
+          </div>
+
+          <div class="iq-item">
+            <button class="iq-btn" data-bs-toggle="collapse" data-bs-target="#iq3" aria-expanded="false" aria-controls="iq3">
+              <div class="iq-num">03</div>
+              <div class="iq-q-text">What is the difference between the &lt;head&gt; and &lt;body&gt; elements?</div>
+              <i class="fas fa-chevron-down iq-chevron"></i>
+            </button>
+            <div id="iq3" class="collapse" data-bs-parent="#iqAccordion">
+              <div class="iq-ans">The <code>&lt;head&gt;</code> section contains metadata &mdash; information about the page that is not displayed to the user, such as the title, character encoding, viewport settings, and stylesheet links. The <code>&lt;body&gt;</code> section contains all visible content: headings, paragraphs, images, links, tables, and forms that users see and interact with.</div>
+            </div>
+          </div>
+
+          <div class="iq-item">
+            <button class="iq-btn" data-bs-toggle="collapse" data-bs-target="#iq4" aria-expanded="false" aria-controls="iq4">
+              <div class="iq-num">04</div>
+              <div class="iq-q-text">Why is the &lt;title&gt; tag important?</div>
+              <i class="fas fa-chevron-down iq-chevron"></i>
+            </button>
+            <div id="iq4" class="collapse" data-bs-parent="#iqAccordion">
+              <div class="iq-ans">The <code>&lt;title&gt;</code> element defines the text shown on the browser tab. It is also what Google displays as the clickable headline in search results, and what browsers use as the default bookmark name. A meaningful, descriptive title improves user experience, SEO ranking, and navigation when multiple tabs are open.</div>
+            </div>
+          </div>
+
+          <div class="iq-item">
+            <button class="iq-btn" data-bs-toggle="collapse" data-bs-target="#iq5" aria-expanded="false" aria-controls="iq5">
+              <div class="iq-num">05</div>
+              <div class="iq-q-text">What are meta tags and where are they placed?</div>
+              <i class="fas fa-chevron-down iq-chevron"></i>
+            </button>
+            <div id="iq5" class="collapse" data-bs-parent="#iqAccordion">
+              <div class="iq-ans">Meta tags are self-closing HTML elements placed inside the <code>&lt;head&gt;</code> section. They provide additional information about the webpage to browsers and search engines. Common meta tags include charset (character encoding), viewport (responsive design), and description (SEO summary). They are not displayed on the page itself.</div>
+            </div>
+          </div>
+
+          <div class="iq-item">
+            <button class="iq-btn" data-bs-toggle="collapse" data-bs-target="#iq6" aria-expanded="false" aria-controls="iq6">
+              <div class="iq-num">06</div>
+              <div class="iq-q-text">What is the purpose of the viewport meta tag?</div>
+              <i class="fas fa-chevron-down iq-chevron"></i>
+            </button>
+            <div id="iq6" class="collapse" data-bs-parent="#iqAccordion">
+              <div class="iq-ans">The viewport meta tag <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> instructs mobile browsers to set the viewport width to match the device screen width and display at a natural 1:1 scale. Without it, mobile browsers zoom out and render a shrunken desktop layout that is unreadable on small screens.</div>
+            </div>
+          </div>
+
+          <div class="iq-item">
+            <button class="iq-btn" data-bs-toggle="collapse" data-bs-target="#iq7" aria-expanded="false" aria-controls="iq7">
+              <div class="iq-num">07</div>
+              <div class="iq-q-text">What are HTML comments? How are they written?</div>
+              <i class="fas fa-chevron-down iq-chevron"></i>
+            </button>
+            <div id="iq7" class="collapse" data-bs-parent="#iqAccordion">
+              <div class="iq-ans">HTML comments are developer notes written inside the source code that are completely ignored by the browser. They do not appear in the rendered output. The syntax is <code>&lt;!-- comment text here --&gt;</code>. They are used to explain code, organise sections with labels, and communicate intent to other developers.</div>
+            </div>
+          </div>
+
+          <div class="iq-item">
+            <button class="iq-btn" data-bs-toggle="collapse" data-bs-target="#iq8" aria-expanded="false" aria-controls="iq8">
+              <div class="iq-num">08</div>
+              <div class="iq-q-text">How does HTML handle extra whitespace?</div>
+              <i class="fas fa-chevron-down iq-chevron"></i>
+            </button>
+            <div id="iq8" class="collapse" data-bs-parent="#iqAccordion">
+              <div class="iq-ans">HTML collapses all consecutive whitespace &mdash; multiple spaces, tabs, and line breaks &mdash; into a single space in the rendered output. This means you can freely use indentation and blank lines to make your source code readable without affecting what the browser displays. The browser only renders one space regardless of how many you write.</div>
+            </div>
+          </div>
+
+          <div class="iq-item">
+            <button class="iq-btn" data-bs-toggle="collapse" data-bs-target="#iq9" aria-expanded="false" aria-controls="iq9">
+              <div class="iq-num">09</div>
+              <div class="iq-q-text">Is HTML case-sensitive?</div>
+              <i class="fas fa-chevron-down iq-chevron"></i>
+            </button>
+            <div id="iq9" class="collapse" data-bs-parent="#iqAccordion">
+              <div class="iq-ans">HTML is not case-sensitive. The browser treats <code>&lt;H1&gt;</code> and <code>&lt;h1&gt;</code> identically. However, the W3C specification and all modern development conventions recommend writing all HTML tags in lowercase. This ensures compatibility with XHTML (which is case-sensitive), maintains consistency, and produces cleaner, more readable code.</div>
+            </div>
+          </div>
+
+          <div class="iq-item">
+            <button class="iq-btn" data-bs-toggle="collapse" data-bs-target="#iq10" aria-expanded="false" aria-controls="iq10">
+              <div class="iq-num">10</div>
+              <div class="iq-q-text">Why should HTML tags always be written in lowercase?</div>
+              <i class="fas fa-chevron-down iq-chevron"></i>
+            </button>
+            <div id="iq10" class="collapse" data-bs-parent="#iqAccordion">
+              <div class="iq-ans">Lowercase is the recommended convention by the W3C. It ensures compatibility with XHTML, which is case-sensitive. It also makes code more readable and consistent, aligns with professional team style guides, and is what all modern frameworks and validators expect. Building the lowercase habit from the beginning prevents problems when moving to more advanced technologies.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== PRACTICE SET ===== -->
+      <div class="mb-5" id="practice" data-aos="fade-up">
+        <span class="sec-eyebrow">Practice Set</span>
+        <h2 class="sec-title">Practice Questions</h2>
+        <div class="orange-rule"></div>
+        <p class="sec-lead mb-4">Work through every question. Type the code yourself. Do not copy from examples above.</p>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff easy"><i class="fas fa-circle"></i> Easy</span>
+              <h5>Q1 &mdash; Create a Basic Document</h5>
+              <p>Create a complete HTML document using DOCTYPE, html, head, and body tags. Add a title and one heading inside the correct sections. Open it in Live Server.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff easy"><i class="fas fa-circle"></i> Easy</span>
+              <h5>Q2 &mdash; Configure the Head Section</h5>
+              <p>Add to the head section: a descriptive page title, the UTF-8 charset meta tag, and the viewport meta tag. Verify the title appears on the browser tab.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff easy"><i class="fas fa-circle"></i> Easy</span>
+              <h5>Q3 &mdash; Build a Structured Page</h5>
+              <p>Create a webpage with correct document structure containing one heading and two paragraphs inside the body. Use proper indentation throughout.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff easy"><i class="fas fa-circle"></i> Easy</span>
+              <h5>Q4 &mdash; Write HTML Comments</h5>
+              <p>Add three meaningful HTML comments to your existing file: one above the head section, one above the body section, and one above your heading explaining what it represents.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff medium"><i class="fas fa-circle"></i> Medium</span>
+              <h5>Q5 &mdash; Title Browser Tab Verification</h5>
+              <p>Create a webpage with a specific meaningful title. Open it in a browser and take note of the browser tab text. Then change the title, save, and observe the Live Server refresh updating it.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff medium"><i class="fas fa-circle"></i> Medium</span>
+              <h5>Q6 &mdash; DOCTYPE Experiment</h5>
+              <p>Create two identical HTML files. Remove DOCTYPE from one. Open both in Chrome DevTools (F12 &rarr; Console). Observe whether any differences appear in browser behaviour or warnings.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff medium"><i class="fas fa-circle"></i> Medium</span>
+              <h5>Q7 &mdash; Case Convention Practice</h5>
+              <p>Write a complete HTML document using UPPERCASE tags throughout. Then rewrite it entirely in lowercase. Compare both. Identify which version is correct by convention and explain why.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="g-card practice-card h-100">
+              <span class="diff hard"><i class="fas fa-circle"></i> Practical</span>
+              <h5>Q8 &mdash; Complete Template From Memory</h5>
+              <p>Close this page. Open VS Code. Type the complete HTML template entirely from memory without looking at any reference. Include: DOCTYPE, html with lang, head, all three meta tags, title, body, heading, and paragraph.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== MINI TASK ===== -->
+      <div class="mb-5" id="mini-task" data-aos="fade-up">
+        <span class="sec-eyebrow">Mini Task</span>
+        <h2 class="sec-title">My First Complete Webpage</h2>
+        <div class="orange-rule"></div>
+        <div class="g-card p-4">
+          <div class="d-flex align-items-start gap-3 mb-3">
+            <div style="width:48px;height:48px;min-width:48px;border-radius:12px;background:linear-gradient(135deg,var(--orange),var(--orange-2));display:flex;align-items:center;justify-content:center;">
+              <i class="fas fa-file-code" style="font-size:1.2rem;color:#fff;"></i>
+            </div>
+            <div>
+              <h5 style="font-size:1rem;font-weight:800;margin-bottom:4px;">Build a Personal Introduction Page</h5>
+              <p style="font-size:.85rem;color:var(--text-muted);margin:0;">Create a file named <span class="tag-ref">about-me.html</span> with proper HTML document structure</p>
+            </div>
+          </div>
+          <div style="height:1px;background:var(--border);margin:16px 0;"></div>
+          <div style="font-size:.82rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:12px;">Requirements</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--text-soft);"><i class="fas fa-circle" style="color:var(--orange);font-size:.4rem;margin-top:8px;"></i>Correct and complete HTML document structure</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--text-soft);"><i class="fas fa-circle" style="color:var(--orange);font-size:.4rem;margin-top:8px;"></i>A meaningful, descriptive page title</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--text-soft);"><i class="fas fa-circle" style="color:var(--orange);font-size:.4rem;margin-top:8px;"></i>UTF-8 charset meta tag</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--text-soft);"><i class="fas fa-circle" style="color:var(--orange);font-size:.4rem;margin-top:8px;"></i>Viewport meta tag for mobile</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--text-soft);"><i class="fas fa-circle" style="color:var(--orange);font-size:.4rem;margin-top:8px;"></i>One main heading with your name</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--text-soft);"><i class="fas fa-circle" style="color:var(--orange);font-size:.4rem;margin-top:8px;"></i>Three paragraphs about yourself</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--text-soft);"><i class="fas fa-circle" style="color:var(--orange);font-size:.4rem;margin-top:8px;"></i>At least two meaningful HTML comments</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--text-soft);"><i class="fas fa-circle" style="color:var(--orange);font-size:.4rem;margin-top:8px;"></i>Consistent indentation throughout</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--text-soft);"><i class="fas fa-circle" style="color:var(--orange);font-size:.4rem;margin-top:8px;"></i>All tags written in lowercase</div>
+          </div>
+          <div style="margin-top:16px;padding:12px 16px;background:rgba(249,115,22,.06);border-radius:8px;font-size:.83rem;color:var(--text-muted);border-left:3px solid var(--orange);">
+            <strong style="color:var(--orange-light);">Rule:</strong> Type every line manually. No copy-paste from the examples above. Open in Live Server and verify it renders correctly before moving on.
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CHAPTER CHALLENGE ===== -->
+      <div class="mb-5" id="challenge" data-aos="fade-up">
+        <span class="sec-eyebrow">Chapter Challenge</span>
+        <h2 class="sec-title">Build Without a Reference</h2>
+        <div class="orange-rule"></div>
+        <div class="challenge-card">
+          <h3><i class="fas fa-trophy me-2" style="color:var(--orange)"></i>HTML Template Challenge</h3>
+          <p>This challenge tests whether you have truly learned this chapter or only followed along. Close every reference, close this page, and complete the task entirely from memory.</p>
+          <div class="challenge-req">
+            <div class="challenge-req-item"><i class="fas fa-check-circle"></i><span>Create a new folder named <strong>Challenge-2</strong></span></div>
+            <div class="challenge-req-item"><i class="fas fa-check-circle"></i><span>Create <strong>index.html</strong> inside it</span></div>
+            <div class="challenge-req-item"><i class="fas fa-check-circle"></i><span>Write the complete HTML5 document structure from memory</span></div>
+            <div class="challenge-req-item"><i class="fas fa-check-circle"></i><span>Include DOCTYPE, html with lang, head, body with proper nesting</span></div>
+            <div class="challenge-req-item"><i class="fas fa-check-circle"></i><span>Add charset, viewport, title, heading, two paragraphs, and two comments</span></div>
+            <div class="challenge-req-item"><i class="fas fa-check-circle"></i><span>All tags must be lowercase with correct indentation</span></div>
+            <div class="challenge-req-item"><i class="fas fa-check-circle"></i><span>Open in Live Server and verify it displays without errors</span></div>
+          </div>
+          <div class="callout warn" style="margin:0;">
+            <div class="callout-icon"><i class="fas fa-ban"></i></div>
+            <div class="callout-content"><strong>No References Allowed</strong>Do not look at any code examples, notes, or this chapter while completing the challenge. If you need to look something up, the chapter is not yet fully learned. Close everything, attempt it, then return to verify.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CHECKLIST ===== -->
+      <div class="mb-5" id="checklist" data-aos="fade-up">
+        <span class="sec-eyebrow">Before You Move On</span>
+        <h2 class="sec-title">Completion Checklist</h2>
+        <div class="orange-rule"></div>
+        <p style="font-size:.88rem;color:var(--text-muted);margin-bottom:20px;">Check every item once you genuinely understand it. Do not proceed to Chapter 3 until all 10 are checked.</p>
+        <div class="g-card p-4">
+          <div id="cl-progress"><div id="cl-fill"></div></div>
+          <div id="cl-count" style="font-size:.8rem;color:var(--text-muted);margin-bottom:16px;text-align:right;">0 / 10 completed</div>
+          <div id="cl-items">
+            <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"></div><div class="check-label">I can create a complete HTML document from scratch</div></div>
+            <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"></div><div class="check-label">I can explain the purpose of the DOCTYPE declaration</div></div>
+            <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"></div><div class="check-label">I use the html element correctly with the lang attribute</div></div>
+            <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"></div><div class="check-label">I know the difference between head and body sections</div></div>
+            <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"></div><div class="check-label">I can add a meaningful page title</div></div>
+            <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"></div><div class="check-label">I have configured charset, viewport, and description meta tags</div></div>
+            <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"></div><div class="check-label">I can write HTML comments correctly</div></div>
+            <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"></div><div class="check-label">I understand how HTML handles whitespace</div></div>
+            <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"></div><div class="check-label">I consistently use lowercase HTML tags</div></div>
+            <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"></div><div class="check-label">I completed all practice questions, mini task, and challenge</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== QUICK REVISION ===== -->
+      <div class="mb-5" id="revision" data-aos="fade-up">
+        <span class="sec-eyebrow">Quick Revision</span>
+        <h2 class="sec-title">Chapter 2 &mdash; Key Takeaways</h2>
+        <div class="orange-rule"></div>
+        <div class="g-card p-4">
+          <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:18px;">Review these points before every practice session. Hover to highlight.</p>
+          <div>
+            <span class="rev-pill">Every HTML page starts with &lt;!DOCTYPE html&gt;</span>
+            <span class="rev-pill">&lt;html&gt; is the root element of every document</span>
+            <span class="rev-pill">Always add lang="en" to &lt;html&gt;</span>
+            <span class="rev-pill">&lt;head&gt; contains metadata — not visible content</span>
+            <span class="rev-pill">&lt;body&gt; contains all visible page content</span>
+            <span class="rev-pill">&lt;title&gt; defines the browser tab text</span>
+            <span class="rev-pill">charset="UTF-8" ensures correct character display</span>
+            <span class="rev-pill">viewport meta tag is required for mobile</span>
+            <span class="rev-pill">Comments syntax: &lt;!-- comment --&gt;</span>
+            <span class="rev-pill">HTML ignores extra spaces and line breaks</span>
+            <span class="rev-pill">HTML is case-insensitive — lowercase is the convention</span>
+            <span class="rev-pill">Never place visible content inside &lt;head&gt;</span>
+            <span class="rev-pill">DOCTYPE must be the very first line</span>
+            <span class="rev-pill">A good title improves UX, SEO, and bookmarks</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== COMPLETION BUTTON ===== -->
+      <div class="g-card completion-zone mb-5" data-aos="zoom-in">
+        <h4 style="font-size:1.2rem;font-weight:800;margin-bottom:8px;">Ready to Mark Chapter 2 Complete?</h4>
+        <p style="font-size:.88rem;color:var(--text-muted);margin-bottom:24px;max-width:440px;margin-left:auto;margin-right:auto;">Only click this after completing the checklist, all practice questions, the mini task, and the chapter challenge.</p>
+        <button id="btn-complete" onclick="markComplete()">
+          <i class="fas fa-trophy"></i> Mark Chapter 2 as Complete
+        </button>
+        <div id="completion-msg">
+          <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:12px;padding:18px 22px;max-width:440px;margin:0 auto;">
+            <div style="font-size:1.1rem;margin-bottom:8px;"><i class="fas fa-circle-check" style="color:var(--green)"></i></div>
+            <div style="font-size:.95rem;font-weight:700;color:var(--green);margin-bottom:6px;">Chapter 2 Complete!</div>
+            <div style="font-size:.84rem;color:var(--text-muted);">Progress saved. You are ready for Chapter 3 &mdash; Text Formatting &amp; Basic Tags.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== NEXT CHAPTER ===== -->
+      <div id="next-chapter" data-aos="zoom-in">
+        <div class="next-banner">
+          <div class="position-relative">
+            <span class="sec-eyebrow d-block text-center mb-2">What&rsquo;s Next?</span>
+            <h2>Chapter 3 &mdash; Text Formatting &amp; Basic Tags</h2>
+            <p>You now know how to build an HTML document correctly. In Chapter 3, you will fill that document with meaningful content &mdash; learning every tag used to format and structure text in professional web pages.</p>
+            <div class="next-topics">
+              <span class="next-pill">h1 to h6 Headings</span>
+              <span class="next-pill">&lt;p&gt; Paragraphs</span>
+              <span class="next-pill">&lt;br&gt; Line Breaks</span>
+              <span class="next-pill">&lt;hr&gt; Horizontal Rule</span>
+              <span class="next-pill">Bold &amp; Strong</span>
+              <span class="next-pill">Italic &amp; Emphasis</span>
+              <span class="next-pill">&lt;mark&gt; &lt;sub&gt; &lt;sup&gt;</span>
+              <span class="next-pill">&lt;pre&gt; Tag</span>
+            </div>
+            <a href="../Chapter-3/index.html" class="btn-next-ch">
+              Continue to Chapter 3 <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="mt-3" style="font-size:.8rem;color:var(--text-muted);">
+              <i class="fas fa-clock me-1" style="color:var(--orange)"></i> ~55 minutes &nbsp;&middot;&nbsp;
+              <i class="fas fa-tags me-1" style="color:var(--orange)"></i> 10+ New HTML Tags
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end col-lg-9 -->
+
+    <!-- ===== TOC SIDEBAR ===== -->
+    <div class="col-lg-3 d-none d-lg-block">
+      <div class="toc">
+        <div class="toc-title">On This Page</div>
+        <a class="toc-link" href="#objectives"><i class="fas fa-bullseye"></i> Objectives</a>
+        <a class="toc-link" href="#concepts"><i class="fas fa-sitemap"></i> Document Structure</a>
+        <a class="toc-link" href="#doctype"><i class="fas fa-file-code"></i> DOCTYPE</a>
+        <a class="toc-link" href="#html-element"><i class="fas fa-code"></i> html Element</a>
+        <a class="toc-link" href="#head-section"><i class="fas fa-gear"></i> head Section</a>
+        <a class="toc-link" href="#body-section"><i class="fas fa-eye"></i> body Section</a>
+        <a class="toc-link" href="#title-tag"><i class="fas fa-heading"></i> title Tag</a>
+        <a class="toc-link" href="#meta-tags"><i class="fas fa-tags"></i> Meta Tags</a>
+        <a class="toc-link" href="#comments"><i class="fas fa-comment"></i> Comments</a>
+        <a class="toc-link" href="#whitespace"><i class="fas fa-align-left"></i> Whitespace</a>
+        <a class="toc-link" href="#case"><i class="fas fa-font"></i> Case Rules</a>
+        <a class="toc-link" href="#template"><i class="fas fa-file"></i> Full Template</a>
+        <a class="toc-link" href="#mistakes"><i class="fas fa-triangle-exclamation"></i> Mistakes</a>
+        <a class="toc-link" href="#interview"><i class="fas fa-briefcase"></i> Interview Q</a>
+        <a class="toc-link" href="#practice"><i class="fas fa-dumbbell"></i> Practice</a>
+        <a class="toc-link" href="#mini-task"><i class="fas fa-hammer"></i> Mini Task</a>
+        <a class="toc-link" href="#challenge"><i class="fas fa-trophy"></i> Challenge</a>
+        <a class="toc-link" href="#checklist"><i class="fas fa-list-check"></i> Checklist</a>
+        <a class="toc-link" href="#revision"><i class="fas fa-rotate"></i> Revision</a>
+        <a class="toc-link" href="#next-chapter"><i class="fas fa-arrow-right"></i> Chapter 3</a>
+
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border);">
+          <div class="toc-title">Chapter Progress</div>
+          <div style="height:5px;background:rgba(255,255,255,.06);border-radius:99px;overflow:hidden;margin-bottom:8px;">
+            <div id="sidebar-progress" style="height:100%;width:0%;background:linear-gradient(90deg,var(--orange),var(--green));transition:width .3s;border-radius:99px;"></div>
+          </div>
+          <div id="sidebar-pct" style="font-size:.75rem;color:var(--text-muted);text-align:right;">0% read</div>
+        </div>
+
+        <div style="margin-top:18px;display:flex;flex-direction:column;gap:6px;">
+          <a href="../Chapter-1/index.html" style="display:flex;align-items:center;gap:7px;font-size:.8rem;color:var(--text-muted);text-decoration:none;padding:8px 10px;border-radius:8px;border:1px solid var(--border);transition:all .2s;" onmouseover="this.style.borderColor='rgba(249,115,22,.3)';this.style.color='var(--orange)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">
+            <i class="fas fa-arrow-left"></i> Chapter 1
+          </a>
+          <a href="../index.html" style="display:flex;align-items:center;gap:7px;font-size:.8rem;color:var(--text-muted);text-decoration:none;padding:8px 10px;border-radius:8px;border:1px solid var(--border);transition:all .2s;" onmouseover="this.style.borderColor='rgba(249,115,22,.3)';this.style.color='var(--orange)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">
+            <i class="fas fa-home"></i> Course Home
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end row -->
+</div><!-- end container -->
+
+<!-- ====== CHAPTER NAV BAR ====== -->
+<div class="chapter-nav-bar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a href="../Chapter-1/index.html" class="ch-nav-btn"><i class="fas fa-arrow-left"></i> Chapter 1</a>
+    <div style="font-size:.8rem;color:var(--text-muted);">Chapter 2 of 8</div>
+    <a href="../Chapter-3/index.html" class="ch-nav-btn next">Chapter 3 <i class="fas fa-arrow-right"></i></a>
+  </div>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+      <div>
+        <div class="footer-brand">HTML Mastery <span>with Nilansha</span></div>
+        <div style="font-size:.8rem;color:var(--text-muted);margin-top:4px;">Chapter 2 &mdash; Basic HTML Structure</div>
+      </div>
+      <div style="font-size:.82rem;color:var(--text-muted);">
+        <span style="color:var(--orange)">&#8592;</span> <a href="../Chapter-1/index.html" style="color:var(--text-muted);text-decoration:none;">Chapter 1</a>
+        &nbsp;&middot;&nbsp;
+        <a href="../Chapter-3/index.html" style="color:var(--text-muted);text-decoration:none;">Chapter 3</a> <span style="color:var(--orange)">&#8594;</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2025 HTML Mastery with Nilansha. All rights reserved.</div>
+      <div>Let&rsquo;s Learn HTML with <span style="color:var(--orange);font-weight:600;">Nilansha</span> &hearts;</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ====== SCRIPTS ====== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
