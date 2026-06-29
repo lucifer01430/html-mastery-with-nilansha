@@ -1,7 +1,7 @@
 # <p align="center"><img src="assets/img/logo.png" alt="HTML Mastery Logo" width="100px" style="border-radius: 50%;"><br>HTML Mastery with Nilansha</p>
 
 <p align="center">
-  <strong>From Absolute Beginner to Building Structured Websites with HTML</strong>
+  <strong>From Absolute Beginner to Building Structured Websites with HTML </strong>
 </p>
 
 <p align="center">
