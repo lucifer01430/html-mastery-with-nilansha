@@ -1,3 +1,5 @@
+// CHAPTER -2 JS
+
 
   AOS.init({ once:true, duration:550, easing:'ease-out-cubic', offset:50 });
 
